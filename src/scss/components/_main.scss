@@ -1,4 +1,11 @@
 .images-main{
 	cursor: pointer;
 	border-radius: 10px;
+	transform-style: preserve-3d;
+	transition: .3s;
+	transform: scale(1);
+}
+
+.images-main:hover {
+	transform: scale(1.05);
 }

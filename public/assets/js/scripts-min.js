@@ -11,6 +11,8 @@ var _swDetecter = require('./modules/swDetecter');
 
 var _mdInner = require('./modules/mdInner');
 
+var _modalLogin = require('./modules/modal-login');
+
 (function () {
 	(0, _swDetecter.swDetecter)();
 	(0, _topNav.topNav)();
@@ -23,7 +25,7 @@ var _mdInner = require('./modules/mdInner');
 	}
 })();
 
-},{"./modules/mdInner":2,"./modules/searchFilter":3,"./modules/swDetecter":4,"./modules/tns-slider":5,"./modules/topNav":6}],2:[function(require,module,exports){
+},{"./modules/mdInner":2,"./modules/modal-login":3,"./modules/searchFilter":4,"./modules/swDetecter":5,"./modules/tns-slider":6,"./modules/topNav":7}],2:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -66,6 +68,36 @@ var mdInner = exports.mdInner = function mdInner(rutaMd, nameObjJson, classDiv) 
 };
 
 },{}],3:[function(require,module,exports){
+"use strict";
+
+var body = document.querySelector("body");
+var modal = document.querySelector(".modal");
+var modalButton = document.querySelector(".modal-button");
+var modalButtonM = document.querySelector(".modal-button-m");
+var closeButton = document.querySelector(".close-button");
+var scrollDown = document.querySelector(".scroll-down");
+var isOpened = false;
+
+var openModal = function openModal() {
+  modal.classList.add("is-open");
+  body.style.overflow = "hidden";
+};
+
+var closeModal = function closeModal() {
+  modal.classList.remove("is-open");
+  body.style.overflow = "initial";
+};
+
+modalButton.addEventListener("click", openModal);
+closeButton.addEventListener("click", closeModal);
+modalButtonM.addEventListener("click", openModal);
+
+document.onkeydown = function (evt) {
+  evt = evt || window.event;
+  evt.keyCode === 27 ? closeModal() : false;
+};
+
+},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -92,7 +124,7 @@ var searchFilter = exports.searchFilter = function searchFilter() {
 	fnFilter(document.getElementById('searchInput'), '.class-item__fragment', '.class-item');
 };
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -108,7 +140,7 @@ var swDetecter = exports.swDetecter = function swDetecter() {
 	}
 };
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -126,7 +158,7 @@ var tnsSingle = exports.tnsSingle = function tnsSingle() {
   });
 };
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
