@@ -1,0 +1,209 @@
+.top-nav{
+	border-bottom 	: 1px solid #DFE0E0;
+	background    	: #FFF;
+	position      	: fixed;
+	top           	: 0;
+	width         	: 100%;
+	left          	: 0;
+	display 		: flex;
+	justify-content : center;
+	z-index: 2;
+	padding: 2rem;
+	&__container{
+		display 		: flex;
+		justify-content : space-between;
+		height        	: var(--header-height);
+		width: 100%;
+		max-width: 1200px;
+		padding: 0 15px;
+		
+	}
+
+	&__link{
+		align-self: center;
+	}
+	&__logo{
+		height: 5rem;
+		width: auto;
+		display: block;
+		@include from(l){
+			height: 5rem;
+		}
+		@include from(m){
+			height: 6rem;
+		}
+	}
+	&__menu{
+		@include fromTo(s,l){
+			position 		: fixed;
+			padding 		: 0 10px;
+			height 			: 100vh;
+			width 			: 260px;
+			background 		: white;
+			transition 		: right .5s;
+			overflow-y 		: auto;
+			border-top 		: 1px solid #DFE0E0;
+			border-left 	: 1px solid #DFE0E0;
+			top 			: 7rem;
+			right 			: -260px;
+			z-index: 1;
+			&.show-top-nav {
+				right 		: 0;
+			}
+		}
+		@include from(l){
+			align-self: center;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	&__li{
+		@include fromTo(s,l){
+			display: block;
+			border-bottom: 1px solid #DFE0E0;
+			padding: 10px 2px;
+
+		}
+		margin-left: 1.5rem;
+		list-style-type: none;
+		display: inline-block;
+		
+	}
+	&__anchor{
+		padding: 10px 5px;
+		font-weight: bold;
+		color: var(--color-grayLow);
+		@include fromTo(s,l){
+			display: block;
+		}
+
+		
+
+	}
+
+
+
+	&__mb-iconMenu {
+		position: relative;
+		align-self: center;
+		top: 3px;
+		padding: 0;
+		span{
+			&.hamburger-inner{
+				background: black;
+				&::after{}
+				&::before{}
+				&::after, &::before{
+					background: black;
+				}
+			}
+		}
+		&:focus {
+			outline: 0 !important;
+			-moz-outline-style: none !important;
+			outline: thin dotted;
+			outline: 5px auto -webkit-focus-ring-color;
+			outline-offset: -2px;
+		}
+		@include from(l){
+			display: none;
+		}
+	}
+	.top-nav__anchor:hover{
+		color: white;
+		background: var(--color-grayLow);;
+		text-decoration: none;
+		
+		border-radius: 5px;
+		border: 2px;
+	}
+	.btn-ml{
+		white-space: nowrap;
+		display: block;
+		@include from(m){
+			display: block;
+		}
+		@include from(s){
+			display: none;
+		}
+	}
+	.btn-top-nav{
+		position: relative;
+		list-style: none;
+		-webkit-box-flex: 1;
+		-ms-flex: auto;
+		flex: auto;
+		background-color: var(--color-sky);
+		margin: 10px 0px;
+		padding: 10px 10px;
+		color: white;
+		border-radius: 5px;
+		border: 2px;
+		border-color: var(--color-skyLow);
+		cursor: pointer;
+		transition: .5s;
+		transform: scale(.9);
+		
+		}
+		.btn-top-nav:hover{
+			transform: scale(1);
+			background-color: var(--color-skyLow); /* Green */
+			color: white;
+		  }
+		.btn-dark{
+			background-color: var(--color-skyLow);
+			
+		}
+		.btn-dark:hover{
+			transform: scale(1);
+			background-color: var(--color-sky); /* Green */
+			color: white;
+		}
+}
+
+.btn-m-nav{
+		margin: auto;
+		width: 200px;
+		margin-top: 4rem;
+		display: none;
+
+		@include fromTo(s,l){
+			display: block;
+		}
+		@include from(m){
+			display: none;
+		}
+	.btn-top-nav{
+		position: relative;
+		list-style: none;
+		-webkit-box-flex: 1;
+		-ms-flex: auto;
+		flex: auto;
+		background-color: var(--color-sky);
+		margin: 10px 0px;
+		padding: 15px 5px;
+		color: white;
+		border-radius: 5px;
+		border: 2px;
+		border-color: var(--color-skyLow);
+		transition: .5s;
+		transform: scale(.9);
+	}
+	.btn-dark{
+		background-color: var(--color-skyLow);
+		
+	}
+	.btn-top-nav:hover{
+			transform: scale(1);
+			background-color: var(--color-skyLow); /* Green */
+			color: white;
+		  }
+	.btn-dark:hover{
+		transform: scale(1);
+		background-color: var(--color-sky); /* Green */
+		color: white;
+	}
+	
+}
+
+
