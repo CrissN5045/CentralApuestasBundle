@@ -1,0 +1,14 @@
+mixin pushImgsHome()
+	div(class='ed-grid m-grid-1 lg-grid-1 row-gap ')
+		div(class="ed-grid m-grid-4 s-grid-1 ")
+			-for(var i = 0; i < imgs_home.length; i++)
+				-var img= imgs_home[i].img 
+				-var text_title= imgs_home[i].title 
+				-var text_class= imgs_home[i].class 
+				+pushImg(img, text_class, text_title)
+
+mixin pushImg(img, text_class, text_title)
+	img(class=text_class class="images-main" src=img, alt=text_title)
+	
+	
++pushImgsHome()

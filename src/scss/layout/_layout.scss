@@ -29,7 +29,8 @@ body {
 	max-height: 400px;
 }
 .main-footer {
-	background 		: $color-first;
+	z-index: 0;
+	background 		: var(--color-sky);
 	color      		: #FFF;
 	padding    		: 2rem 0;
 	font-size  		: fontSize(small);

@@ -1,0 +1,10 @@
+mixin selectcoin()
+	select
+		-for(var i = 0; i < coin.length; i++)
+			-var text=coin[i].text 
+			+optioncoin(text)
+
+mixin optioncoin(text)
+	option(value="")=text
+	
++selectcoin()

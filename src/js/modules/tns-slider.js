@@ -1,4 +1,14 @@
+
+
+
+
+
+
 export const tnsSingle = () =>{
+  let tnsSingleVar = document.getElementById('tnsSingle');
+  if(tnsSingleVar!=null){
+
+
   let slider = tns({ 
     container           : '#tnsSingle',
     items               : 1, 
@@ -11,4 +21,8 @@ export const tnsSingle = () =>{
       '<i class="fas fa-chevron-right"></i>'
     ]
   }); 
-};
+};  
+
+}
+	
+

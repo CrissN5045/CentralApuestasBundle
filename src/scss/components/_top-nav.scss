@@ -128,6 +128,7 @@
 		}
 	}
 	.btn-top-nav{
+		
 		position: relative;
 		list-style: none;
 		-webkit-box-flex: 1;
@@ -143,6 +144,10 @@
 		cursor: pointer;
 		transition: .5s;
 		transform: scale(.9);
+
+		a{
+			text-decoration: none;
+		}
 		
 		}
 		.btn-top-nav:hover{
@@ -188,6 +193,7 @@
 		border-color: var(--color-skyLow);
 		transition: .5s;
 		transform: scale(.9);
+		
 	}
 	.btn-dark{
 		background-color: var(--color-skyLow);

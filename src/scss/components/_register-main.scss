@@ -1,0 +1,161 @@
+.main-register{
+	>div{
+		>img{
+			width: 100%;
+			height: auto;
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+			filter: blur(10px);
+
+			@include from(s){
+				top: 135px;
+			}
+		}
+	}
+
+
+	
+}
+
+.clearfix {
+
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		height: 0;
+		
+	}
+	>a.button {
+		text-decoration: none;
+	position: relative;
+    list-style: none;
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    background-color: var(--color-sky);
+    margin: 10px 0;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px;
+    border-color: var(--color-skyLow);
+    cursor: pointer;
+    transition: .5s;
+    transform: scale(.9);
+	  }
+	>a.button:hover {
+		transform: scale(1);
+		background-color: var(--color-skyLow);
+	  }
+		
+}
+
+.container-register{
+	background: var(--color-background);
+	text-align: center;
+	width: 800px;
+	max-width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.205);
+	border-radius: 6px;
+	padding: 25px;
+	margin: 8% auto 0;
+	position: relative;
+	z-index: 1;
+	border-top: 5px solid var(--color-first);
+	
+	h1{
+		color: var(--color-sky);
+	}
+	@include from(s){
+		margin: 1% auto 0;
+	}
+	@include from(m){
+		margin: 10% auto 0;
+	}
+	@include from(l){
+		margin: 6% auto 0;
+	}
+
+	.container-ed{
+		
+		@include from(s){
+			text-align: center;
+			width: 100%;
+		}
+		@include from(l){
+			width: 80%;
+			text-align: left;
+		}
+
+	}
+
+	.input_field {
+		position: relative;
+		margin-bottom: 20px;
+		white-space:nowrap;
+		
+		>span {
+			
+			left: 0;
+			top: 0;
+			color: var(--dark-color);
+			height: 100%;
+			text-align: center;
+			width: 30px;
+			
+			>i {
+				display: inline-block;
+					background-color: var(--color-skyLow);
+					border-radius: 4px 0px 0px 4px;
+					color: white;
+					border: solid 0px #cbc9c9;
+					padding-left: 10px;
+				
+				>input{
+					padding: 0.5rem;
+					border-radius: 3px;
+					border: 1px solid var(--color-grayLow);
+					
+				}
+				>input:disabled {
+					background-color: #cbc9c9;
+				}
+				>select{
+					width: 260px;
+					padding: 0.5rem;
+					border-radius: 3px;
+					border: 1px solid var(--color-grayLow);
+					background: snow;
+					@include from(s){
+						width: 190px;
+					}
+					@include from(m){
+						width: 193px;
+					}
+				}
+				
+			}
+		}
+		.fa{
+				display: inline-block;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+		}
+	}
+}
+
+.container-register .input_field span{
+	font-family: var(--body-font);
+}
+.container-register .input_field select{
+	font-family: var(--body-font);
+}

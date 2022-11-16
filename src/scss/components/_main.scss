@@ -4,8 +4,14 @@
 	transform-style: preserve-3d;
 	transition: .3s;
 	transform: scale(1);
+	
+}
+.images-main:hover {
+	@include from(m){
+	transform: scale(1.05);
+	}
 }
 
-.images-main:hover {
-	transform: scale(1.05);
+.main-container{
+	margin-bottom: 2rem;
 }
