@@ -1,0 +1,7 @@
+mixin pushMetodosPago(url, img)
+	a(href=url) 
+		img(src=img, alt="" class="img-metodosPay")
+		button(class="btn-banca-nav") Mas informacion
+-for(var i =0; i< metodos_Pagos.length; i++)
+	-var metodosPagos = metodos_Pagos[i];
+	+pushMetodosPago(metodosPagos.url, metodosPagos.img)

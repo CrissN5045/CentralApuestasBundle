@@ -113,23 +113,23 @@
 		"topNav":[
 			{
 				"text":"LINEAS DE APUESTA",
-				"url":"example"
+				"url":"lineas de apuesta"
 			},
 			{
 				"text":"CASINO",
-				"url":"Hola1"
+				"url":"casino"
 			},
 			{
 				"text":"CABALLOS",
-				"url":"Hola2"
+				"url":"caballos"
 			},
 			{
 				"text":"BANCA",
-				"url":"Hola3"
+				"url":"banca.html"
 			},
 			{
 				"text":"CONTACTO",
-				"url":"Hola3"
+				"url":"contact.html"
 			}
 	    ],
 		"footer_colum_1":[
@@ -195,6 +195,25 @@
 			}
 		],
 
+		"metodos_Pagos":[
+			{
+				"img" : "assets/img/card1Bancarios.jpg",
+				"url" : "https://chat.whatsapp.com/CdAFpfVfmNjJhT1Z2SFmWm"
+			},
+			{
+				"img" : "assets/img/card2Bancarios.jpg",
+				"url" : "https://chat.whatsapp.com/CdAFpfVfmNjJhT1Z2SFmWm"
+			},
+			{
+				"img" : "assets/img/card3Electronicas.jpg",
+				"url" : "https://chat.whatsapp.com/CdAFpfVfmNjJhT1Z2SFmWm"
+			},
+			{
+				"img" : "assets/img/card4Criptomonedas.jpg",
+				"url" : "https://chat.whatsapp.com/CdAFpfVfmNjJhT1Z2SFmWm"
+			}
+		],
+
 		"imgs_home":[
 			{
 				"img"		: "assets/img/MasDe200.png",	
@@ -253,6 +272,7 @@
 			}
 		],
 
+	
 
 		"countries":[
 			{

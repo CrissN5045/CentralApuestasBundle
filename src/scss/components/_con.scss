@@ -1,0 +1,80 @@
+.main-con{
+	>div{
+		>img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+			filter: blur(5px);
+
+			@include from(m){
+				top: 0px;
+			}
+			@include from(s){
+				top: 150px;
+			}
+		}
+	}
+	.main-cont{
+		margin: 10px 0;
+	
+		.container-cont{
+			background: var(--color-background);
+			text-align: center;
+			width: 70%;
+			max-width: 100%;
+			height: auto;
+			box-sizing: border-box;
+			border: 1px solid rgba(0, 0, 0, 0.205);
+			border-radius: 10px;
+			padding: 25px;
+			margin: 5% auto 0;
+			position: relative;
+			z-index: 1;
+	
+			.text-cont{
+				font-size: 1.1rem;
+				
+				@include from(m){
+					text-align: left;
+					}
+					@include from(s){
+						text-align: center;
+					}
+			}
+
+			.img-metodosPay{
+				width: 99%;
+				border-radius: 6px;
+			}
+
+			.btn-banca-nav{
+				cursor: pointer;
+				position: relative;
+				list-style: none;
+				-webkit-box-flex: 1;
+				-ms-flex: auto;
+				flex: auto;
+				background-color: var(--color-sky);
+				margin: 10px 0px;
+				padding: 15px 5%;
+				color: white;
+				border-radius: 5px;
+				border: 2px;
+				border-color: var(--color-skyLow);
+				transition: .5s;
+				transform: scale(.9);
+			}
+			
+			.btn-banca-nav:hover{
+				transform: scale(1);
+				background-color: var(--color-skyLow); /* Green */
+				color: white;
+			  }
+		}
+	}
+
+	
+}

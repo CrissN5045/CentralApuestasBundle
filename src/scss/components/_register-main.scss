@@ -2,21 +2,21 @@
 	>div{
 		>img{
 			width: 100%;
-			height: auto;
+			height: 100%;
 			position: absolute;
 			top: 0;
 			left: 0;
 			object-fit: cover;
 			filter: blur(10px);
 
+			@include from(m){
+				top: 0px;
+			}
 			@include from(s){
-				top: 135px;
+				top: 150px;
 			}
 		}
 	}
-
-
-	
 }
 
 .clearfix {
@@ -118,9 +118,12 @@
 					padding-left: 10px;
 				
 				>input{
+					width: 95%;
 					padding: 0.5rem;
 					border-radius: 3px;
 					border: 1px solid var(--color-grayLow);
+
+				
 					
 				}
 				>input:disabled {
