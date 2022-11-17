@@ -131,22 +131,22 @@ var swDetecter = exports.swDetecter = function swDetecter() {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+	value: true
 });
 var tnsSingle = exports.tnsSingle = function tnsSingle() {
-  var tnsSingleVar = document.getElementById('tnsSingle');
-  if (tnsSingleVar != null) {
+	var tnsSingleVar = document.getElementById('tnsSingle');
+	if (tnsSingleVar != null) {
 
-    var slider = tns({
-      container: '#tnsSingle',
-      items: 1,
-      slideBy: 1,
-      speed: 1000,
-      mode: 'gallery',
-      mouseDrag: true,
-      controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
-    });
-  };
+		var slider = tns({
+			container: '#tnsSingle',
+			items: 1,
+			slideBy: 1,
+			autoplay: true,
+			speed: 1500,
+			autoplayButtonOutput: false,
+			controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+		});
+	};
 };
 
 },{}],7:[function(require,module,exports){
