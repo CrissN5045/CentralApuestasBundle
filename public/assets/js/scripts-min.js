@@ -142,7 +142,6 @@ var tnsSingle = exports.tnsSingle = function tnsSingle() {
 			items: 1,
 			slideBy: 1,
 			autoplay: true,
-			animateDelay: 4500,
 			speed: 1500,
 			autoplayButtonOutput: false,
 			controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']

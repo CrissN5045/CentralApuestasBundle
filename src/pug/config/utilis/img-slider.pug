@@ -1,0 +1,9 @@
+mixin pushMetodosPago(alt, img)
+	div: div(class='tns-single__content'): img(src=img, alt=alt)
+
+-for(var i =0; i< img_slider.length; i++)
+	-var imgslider = img_slider[i];
+	+pushMetodosPago(imgslider.alt, imgslider.img)
+
+
+

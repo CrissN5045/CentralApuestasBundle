@@ -98,6 +98,17 @@
 				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
 			}
 		],
+		"img_slider":[
+			{
+				"img": "assets/img/UFC (1).jpg",
+				"alt": "UFC"
+			},
+			{
+				"img" : "assets/img/mlb.jpg",
+				"alt" : "mlb"
+			}
+		]
+		,
 		"banca":[
 			{
 				"text":"Esto es banca",
