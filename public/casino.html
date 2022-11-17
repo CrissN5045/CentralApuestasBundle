@@ -54,18 +54,32 @@
 	  <img src="assets/img/logo.png" alt="">
       <h1 class="modal-title">Welcome!</h1>
       <p class="modal-desc">Fanny pack hexagon food truck, street art waistcoat kitsch.</p>
-      <div class="input-block">
-        <label for="email" class="input-label">Email</label>
-        <input type="email" name="email" id="email" placeholder="Email">
+
+	<form name="LoginForm" action="javascript:void(0)" onsubmit="BackEndLogin(this); return false">
+
+      <div class="input-block form-group">
+        <label for="username" class="input-label">Usuario</label>
+        <input type="text" class="form-control" name="username" required placeholder="User">
       </div>
-      <div class="input-block">
-        <label for="password" class="input-label">Password</label>
-        <input type="password" name="password" id="password" placeholder="Password">
+
+      <div class="input-block form-group">
+        <label for="password" class="input-label">Contraseña</label>
+        <input type="password" class="form-control" name="password" placeholder="Password" required >
       </div>
-      <div class="modal-buttons">
+
+	  <div class="text-center mt-2">
+        <small name="msj_error_lg" class="text-danger"></small>
+    	</div>
+
+      <div class="modal-buttons form-group">
         <a href="" class="">Forgot your password?</a>
-        <button class="input-button">Login</button>
-      </div>
+        <button type="submit" name="btn-login" class="input-button">Login</button>
+		<span name="msj_loading" id="id-login-loading"></span>
+        <span name="msj_login">Ingresar</span>
+      </div> 
+    <input type="hidden" name="BackEndUrl" value="https://apuestas.centraldeapuesta.com">
+
+	</form>
       <p class="sign-up">Don't have an account? <a href="#">Sign up now</a></p>
     </div>
     <div class="modal-right">
@@ -78,6 +92,8 @@
     </button>
   </div>
 </div>
+
+<script src="https://images.betimages.com/Betslip/js/quick.login.min.js"></script>
 
       <nav class="top-nav">
         <div class="top-nav__container"><a class="top-nav__link" href="./"><img class="top-nav__logo" src="assets/img/logo.png" alt=""></a>
@@ -120,6 +136,12 @@
 
             </div>
           </div>
+        </div>
+      </div>
+      <div class="main-con">
+        <div class="ed-grid lg-grid-6"><img src="/assets/img/casino.jpg" alt=""></div>
+        <div class="main-cont">
+          <div class="container-casino"></div>
         </div>
       </div>
     </main>
