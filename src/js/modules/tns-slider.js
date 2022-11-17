@@ -8,6 +8,7 @@ export const tnsSingle = () => {
 			items: 1,
 			slideBy: 1,
 			autoplay: true,
+			animateDelay : 4500,
 			speed: 1500,
 			autoplayButtonOutput: false,
 			controlsText: [
