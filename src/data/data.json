@@ -1,103 +1,4 @@
 {
-	"casos":
-		[
-			{
-				"img"		: "assets/img/img1.jpg",	
-				"title"		: "Image 1",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img2.jpg",	
-				"title"		: "Image 2",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img3.jpg",	
-				"title"		: "Image 3",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img4.jpg",	
-				"title"		: "Image 4",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img1.jpg",	
-				"title"		: "Image 1",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img2.jpg",	
-				"title"		: "Image 2",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img3.jpg",	
-				"title"		: "Image 3",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img4.jpg",	
-				"title"		: "Image 4",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img1.jpg",	
-				"title"		: "Image 1",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img2.jpg",	
-				"title"		: "Image 2",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img3.jpg",	
-				"title"		: "Image 3",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img4.jpg",	
-				"title"		: "Image 4",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img1.jpg",	
-				"title"		: "Image 1",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img2.jpg",	
-				"title"		: "Image 2",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img3.jpg",	
-				"title"		: "Image 3",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img4.jpg",	
-				"title"		: "Image 4",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			}
-		],
 		"img_slider":[
 			{
 				"img": "assets/img/UFC (1).jpg",
@@ -262,8 +163,8 @@
 				"class"		: "m-cols-2 s-rows-2"	
 			},
 			{
-				"img"		: "assets/img/UFC (1).jpg",	
-				"title"		: "UFC (1)",
+				"img"		: "assets/img/UFC.jpg",	
+				"title"		: "UFC",
 				"class"		: ""	
 			},
 			{
@@ -282,9 +183,6 @@
 				"class"		: ""	
 			}
 		],
-
-	
-
 		"countries":[
 			{
 				"name_en": "",
@@ -3303,6 +3201,822 @@
 			"code_3": "ZWE",
 			"tld": ".zw"
 			}
+		],
+		
+		"img_casino":
+		[
+			{
+				"img": "assets/img/FruitZen.jpg",
+				"alt": "FruitZen"
+			},
+			{
+				"img": "assets/img/AmericanBlackjack.jpg",
+				"alt": "AmericanBlackjack"
+			},
+			{
+				"img": "assets/img/JumboJoker.jpg",
+				"alt": "JumboJoker"
+			},
+			{
+				"img": "assets/img/EuropeanRoulette.jpg",
+				"alt": "EuropeanRoulette"
+			},
+			{
+				"img": "assets/img/SugarPop2.jpg",
+				"alt": "SugarPop2"
+			},
+			{
+				"img": "assets/img/BloodEternal.jpg",
+				"alt": "BloodEternal"
+			},
+			{
+				"img": "assets/img/Lucky7.jpg",
+				"alt": "Lucky7"
+			},
+			{
+				"img": "assets/img/CaribbeanPoker.jpg",
+				"alt": "CaribbeanPoker"
+			},
+			{
+				"img": "assets/img/DeucesWild.jpg",
+				"alt": "DeucesWild"
+			},
+			{
+				"img": "assets/img/FireandSteel.jpg",
+				"alt": "FireandSteel"
+			},
+			{
+				"img": "assets/img/AmericanBJ.jpg",
+				"alt": "AmericanBJ"
+			},
+			{
+				"img": "assets/img/ArabianWishes.jpg",
+				"alt": "ArabianWishes"
+			},
+			{
+				"img": "assets/img/FreakyF.jpg",
+				"alt": "FreakyF"
+			},
+			{
+				"img": "assets/img/12Animals.jpg",
+				"alt": "12Animals"
+			},
+			{
+				"img": "assets/img/CaribbeanPokerB.jpg",
+				"alt": "CaribbeanPokerB"
+			},
+			{
+				"img": "assets/img/KittyCutie.jpg",
+				"alt": "KittyCutie"
+			},
+			{
+				"img": "assets/img/SistersLuck.jpg",
+				"alt": "SistersLuck"
+			},
+			{
+				"img": "assets/img/SingleDeckBJ.jpg",
+				"alt": "SingleDeckBJ"
+			},
+			{
+				"img": "assets/img/HyperGalactic.jpg",
+				"alt": "HyperGalactic"
+			},
+			{
+				"img": "assets/img/PartyGuy.jpg",
+				"alt": "PartyGuy"
+			},
+			{
+				"img": "assets/img/MammaMia.jpg",
+				"alt": "MammaMia"
+			},
+			{
+				"img": "assets/img/TreasureRoom.jpg",
+				"alt": "TreasureRoom"
+			},
+			{
+				"img": "assets/img/AtTheMovies.jpg",
+				"alt": "AtTheMovies"
+			},
+			{
+				"img": "assets/img/MegaGlam.jpg",
+				"alt": "MegaGlam"
+			},
+			{
+				"img": "assets/img/Sin-City-Nights.jpg",
+				"alt": "SinCityNights"
+			},
+			{
+				"img": "assets/img/FaFaTwins.jpg",
+				"alt": "FaFaTwins"
+			},
+			{
+				"img": "assets/img/FrankenslotsMonster.jpg",
+				"alt": "FrankenslotsMonster"
+			},
+			{
+				"img": "assets/img/Pinocchio.jpg",
+				"alt": "Pinocchio"
+			},
+			{
+				"img": "assets/img/Tycoons.jpg",
+				"alt": "Tycoons"
+			},
+			{
+				"img": "assets/img/EventHorizon.jpg",
+				"alt": "EventHorizon"
+			},
+			{
+				"img": "assets/img/WeekendInVegas.jpg",
+				"alt": "WeekendInVegas"
+			},
+			{
+				"img": "assets/img/TigersClaw.jpg",
+				"alt": "TigersClaw"
+			}
+
+		],
+		"table_PistasPrincipales":[
+			{
+				"table": 
+				[
+					{
+						"Pistas": "Pistas Principales",
+						"Zona": "Zona Horaria",
+						"Tipo": "Tipo",
+						"LimitesP": "Límites 1ro/2do/3ro",
+						"LimitesG": "Límites (GIMMICKS)",
+						"Rebate": "REBATE %"
+					},
+					{
+						"pista": "Aqueduct",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "$1,000",
+						"LimitesGimmicks" : "$100",
+						"Rebate": "7%"
+					},
+					{
+						"pista": "Belmont Park",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Churchill Downs",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Del Mar",
+						"zonaHoraria": "PST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" :"",
+						"Rebate": ""
+					},
+					{
+						"pista": "Delaware Park",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" :"",
+						"Rebate": ""
+					},
+					{
+						"pista": "Fair Grounds Thoroughbred",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" :"",
+						"Rebate": ""
+					},
+					{
+						"pista": "Gulfstream Park",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" :"",
+						"Rebate": ""
+					},
+					{
+						"pista": "Keeneland",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Kentucky Downs",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" :"",
+						"Rebate": ""
+					},
+					{
+						"pista": "Louisiana Downs Thoroughbred",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" :"",
+						"Rebate": ""
+					},
+					{
+						"pista": "Meadowlands Harness",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" :"",
+						"Rebate": ""
+					},
+					{
+						"pista": "Monmouth Park",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" :"",
+						"Rebate": ""
+					},
+					{
+						"pista": "Oaklawn Park",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" :"",
+						"Rebate": ""
+					},
+					{
+						"pista": "Santa Anita Park",
+						"zonaHoraria": "PST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" :"",
+						"Rebate": ""
+					},
+					{
+						"pista": "Saratoga",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" :"",
+						"Rebate": ""
+					},
+					{
+						"pista": "Tampa Bay Downs",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" :"",
+						"Rebate": ""
+					}
+				]
+			},
+			{
+				"table": 
+				[
+					{
+						"Pistas": "MINOR TRACKS",
+						"Zona": "Zona Horaria",
+						"Tipo": "Tipo",
+						"LimitesP": "WIN/PLACE/SHOW/LIMITS",
+						"LimitesG": "GIMMICKS LIMITS",
+						"Rebate": "REBATE %"
+					},
+					{
+						"pista": "Dover Downs",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "$250",
+						"LimitesGimmicks" : "$50",
+						"Rebate": "4%"
+					},
+					{
+						"pista": "Ellis Park",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Freehold Raceway",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Golden Gate Fields",
+						"zonaHoraria": "PST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Harrington Raceway",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Laurel Park",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Lone Star Park",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Los Alamitos Race Course",
+						"zonaHoraria": "PST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Meadowlands",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Meadows Harness",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Monticello Raceway",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Mountaineer Park",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Parx Racing",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Penn National",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Pimlico",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Pocono Downs",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Sam Houston Race Park",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Saratoga Harness",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Suffolk Downs",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Turfway Park",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Woodbine",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Woodbine Mohawk Park",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Yonkers Raceway Harness",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					}
+
+				]
+			},
+			{
+				"table":[
+					{
+						"Pistas": "OTHER TRACKS",
+						"Zona": "Zona Horaria",
+						"Tipo": "Tipo",
+						"LimitesP": "WIN/PLACE/SHOW/LIMITS",
+						"LimitesG": "GIMMICKS LIMITS",
+						"Rebate": "REBATE %"
+					},
+					{
+						"pista": "Arapahoe Park",
+						"zonaHoraria": "MST",
+						"tipo" : "Thoroughbred ",
+						"LimitesPosicion" : "$100",
+						"LimitesGimmicks" : "$20",
+						"Rebate": "1%"
+					},
+					{
+						"pista": "Australia A",
+						"zonaHoraria": "-",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Australia B",
+						"zonaHoraria": "-",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Belterra",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred ",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Cal Expo",
+						"zonaHoraria": "PST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Canterbury Park",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Charles Town",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Delta Downs",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Emerald Downs",
+						"zonaHoraria": "PST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Evangeline Downs",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Fair Grounds QTR",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Fairmount Park",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Finger Lakes",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Fort Erie",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Hastings Park",
+						"zonaHoraria": "PST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Hawthorne",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Hawthorne Harness",
+						"zonaHoraria": "CST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Hialeah Park",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Hoosier Park Harness",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Indiana Downs",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Los Alamitos",
+						"zonaHoraria": "PST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Louisiana Downs QTR",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Mahoning Valley",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Northfield Park",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Pompano Park",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Portland Meadows",
+						"zonaHoraria": "PST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Prairie Meadows",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Presque Isle Downs",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Remington Park",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Retama Park",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Ruidoso Downs",
+						"zonaHoraria": "MST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Sacramento",
+						"zonaHoraria": "PST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Santa Rosa",
+						"zonaHoraria": "PST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Stockton",
+						"zonaHoraria": "PST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Sunland Park",
+						"zonaHoraria": "MST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Thistledown",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Timonium",
+						"zonaHoraria": "EST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Turf Paradise",
+						"zonaHoraria": "PST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Will Rogers Downs",
+						"zonaHoraria": "CST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Woodbine Harness",
+						"zonaHoraria": "EST",
+						"tipo" : "Harness",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					},
+					{
+						"pista": "Zia Park",
+						"zonaHoraria": "MST",
+						"tipo" : "Thoroughbred",
+						"LimitesPosicion" : "",
+						"LimitesGimmicks" : "",
+						"Rebate": ""
+					}
+					
+				]
+			}
+			
 		]
 		
 

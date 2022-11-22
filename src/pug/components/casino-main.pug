@@ -1,11 +1,17 @@
+
 div(class="main-con")
-	div(class="ed-grid lg-grid-6")
+	div(class="bg-casino")
 		img(src="/assets/img/casino.jpg", alt="")
-	div(class="main-cont")
+	div(class="main-cont ed-grid")
 		div(class="container-cont")
-			h1(class="titles") Juegos de Casino
-			div(class="font-low")
-				h5 Nuestros juegos de casino de uso instantaneo son rapidos y faciles de <br> jugar, correr en todas las plataformas y no requiere descarga. <br><br> Central de Apuesta le ofrece todos sus juegos favoritos incluyendo <br> Blackjack, Ruleta, Caribbean Poker, Craps y Tragamonedas.
-			br 
 			div(class="text-cont")
 				include:markdown-it(html) ../md/casino.md
+			
+		div(class="ed-container container-gamesC")
+			div(class="ed-grid rows-gap m-gap-1 s-grid-1 m-grid-3 l-grid-4")
+				div(class="s-cols-1 m-cols-4 s-x-1")
+					br
+					div(class="text-cont")
+						h3 Vista Previa de Juegos
+				
+				include ../config/utilis/img-casino

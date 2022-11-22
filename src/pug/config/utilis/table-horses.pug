@@ -1,0 +1,47 @@
+mixin tablePistaPrincipal()
+	-for(var i = 0; i < table_PistasPrincipales.length; i++)
+		-for(var j = 0; j <= 0; j++)
+			-var PistaP = table_PistasPrincipales[i].table[j].Pistas;
+			-var zonaHoraria = table_PistasPrincipales[i].table[j].Zona;
+			-var tipo = table_PistasPrincipales[i].table[j].Tipo;
+			-var limitesP = table_PistasPrincipales[i].table[j].LimitesP;
+			-var limitesG = table_PistasPrincipales[i].table[j].LimitesG;
+			-var rebate = table_PistasPrincipales[i].table[j].Rebate;
+			table 
+				thead
+					tr
+						th=PistaP
+						th=zonaHoraria
+						th=tipo
+						th=limitesP
+						th=limitesG
+						th=rebate
+				tbody
+					+TpushTD(i)
+
+mixin TpushTD(indice)
+	-console.log(indice)
+		-for(var j = 1; j < table_PistasPrincipales[indice].table.length ; j++)
+		
+			-var pista_t= table_PistasPrincipales[indice].table[j].pista 
+			-var zona_t = table_PistasPrincipales[indice].table[j].zonaHoraria
+			-var tipo_t = table_PistasPrincipales[indice].table[j].tipo
+			-var limitesP_t = table_PistasPrincipales[indice].table[j].LimitesPosicion
+			-var limitesG_t = table_PistasPrincipales[indice].table[j].LimitesGimmicks
+			-var rebate_t = table_PistasPrincipales[indice].table[j].Rebate
+			+pushTD(pista_t,zona_t,tipo_t,limitesP_t,limitesG_t,rebate_t)
+
+mixin pushTD(pista_t,zona_t,tipo_t,limitesP_t,limitesG_t,rebate_t)
+	tr
+		td= pista_t
+		td= zona_t
+		td= tipo_t
+		
+		if(limitesP_t)
+			td(rowspan="100")= limitesP_t
+			td(rowspan="100")= limitesG_t
+			td(rowspan="100")= rebate_t
+			
+
+		
++tablePistaPrincipal()

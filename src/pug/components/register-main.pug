@@ -1,43 +1,40 @@
-div(class="main-con")
-	div(class="ed-grid lg-grid-6")
-		img(src="/assets/img/MasDe200.png", alt="")
-	div(class="container-register")
-			h1 Registro
-			hr(style="width: 50% ")
-			div(class="clearfix ")
-				form() 
-					div(class="ed-grid m-grid-2 s-grid-1 container-ed")
+div(class="container-register")
+		h1 Registro
+		hr(style="width: 50% ")
+		div(class="clearfix ")
+			form() 
+				div(class="ed-grid m-grid-2 s-grid-1 container-ed")
 
-						div(class="input_field"): span: i(class="fa fa-user")
-							input(type="name" name="name" placeholder="Nombre" required)
-						div(class="input_field"): span: i(class="fa fa-user")
-							input(type="apellido" name="apellido" placeholder="Primer Apellido" required)
+					div(class="input_field"): span: i(class="fa fa-user")
+						input(type="name" name="name" placeholder="Nombre" required)
+					div(class="input_field"): span: i(class="fa fa-user")
+						input(type="apellido" name="apellido" placeholder="Primer Apellido" required)
 
-						div(class="input_field"): span: i(class="fa fa-envelope")
-							input(type="email" name="email" placeholder="Correo Electronico" required)
-						div(class="input_field"): span: i(class="fa fa-envelope")
-							input(type="email" name="email" placeholder="Confirmar Correo" required)
+					div(class="input_field"): span: i(class="fa fa-envelope")
+						input(type="email" name="email" placeholder="Correo Electronico" required)
+					div(class="input_field"): span: i(class="fa fa-envelope")
+						input(type="email" name="email" placeholder="Confirmar Correo" required)
 
-						div(class="input_field"): span: i(class="fa fa-unlock-alt")
-							input(type="passworld" name="passworld" placeholder="Passworld" required)
-						div(class="input_field"): span: i(class="fa fa-unlock-alt")
-							input(type="passworld" name="passworld" placeholder="Confirmar Passworld" required)
-						br
-						hr
-					div(class="ed-grid m-grid-2 s-grid-1 container-ed")
-						div(class="input_field"): span: i(class="fa fa-phone-square")
-							input(type="text" name="number" placeholder="Numero de telefono" id="telf" disabled="disabled" required)
-						div(class="input_field select_option m-cols-2 m-x-2 s-cols-2"): span: i(class="fa fa-id-card-o")
-							include ../config/utilis/paises-select
-						div(class="input_field select_option m-cols-1 m-x-1 s-cols-2"): span: i(class="fa fa-usd")
-							include ../config/utilis/coin-select
-						div(class="input_field select_option m-cols-2 m-x-2 s-cols-2"): span: i(class="fa fa-id-card-o")
-							select
-								option Seleccione Estado
+					div(class="input_field"): span: i(class="fa fa-unlock-alt")
+						input(type="passworld" name="passworld" placeholder="Passworld" required)
+					div(class="input_field"): span: i(class="fa fa-unlock-alt")
+						input(type="passworld" name="passworld" placeholder="Confirmar Passworld" required)
+					br
+					hr
+				div(class="ed-grid m-grid-2 s-grid-1 container-ed")
+					div(class="input_field"): span: i(class="fa fa-phone-square")
+						input(type="text" name="number" placeholder="Numero de telefono" id="telf" disabled="disabled" required)
+					div(class="input_field select_option m-cols-2 m-x-2 s-cols-2"): span: i(class="fa fa-id-card-o")
+						include ../config/utilis/paises-select
+					div(class="input_field select_option m-cols-1 m-x-1 s-cols-2"): span: i(class="fa fa-usd")
+						include ../config/utilis/coin-select
+					div(class="input_field select_option m-cols-2 m-x-2 s-cols-2"): span: i(class="fa fa-id-card-o")
+						select
+							option Seleccione Estado
 
-				<a href="#" class="button">Registrarse</a>		
+			<a href="#" class="button">Registrarse</a>		
 
-	
+
 
 
 

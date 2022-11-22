@@ -1,38 +1,82 @@
+
 .main-con{
-	>div{
+	.bg-casino{
+		margin-top: 37rem;
+		@include from(m){
+			margin-top: 37rem;
+		}
+		@include from(s){
+			margin-top: 15rem;
+		}
 		>img{
 			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			object-fit: cover;
-			filter: blur(4px);
+				height: 850px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				object-fit: cover;
 
-			@include from(m){
-				top: 0px;
-			}
-			@include from(s){
-				top: 150px;
-			}
+				@include from(m){
+					height: 850px;
+				}
+				@include from(s){
+					height: 550px;
+				}		
+		}}
+	.bg-contact{
+		>img{
+			width: 100%;
+				height: 700px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				object-fit: cover;
+				
 		}
 	}
-	.main-cont{
-		margin: 10px 0;
+	.bg-banca{
+		margin-top: 20rem;
+		>img{
+			position: absolute;
+			top: 0;
+			height: 700px;
+			width: 100%;
+			object-fit: cover;
+			z-index: -1;
+		}
+	}
+	.bg-caballos{
+		margin-top: 25rem;
+		>img{
+			width: 100%;
+				height: 700px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				object-fit: cover;
+				
+		}
+	}
+
 	
+	
+.main-cont{
 		.container-cont{
 			background: var(--color-background);
 			text-align: center;
-			width: 70%;
 			max-width: 100%;
 			height: auto;
 			box-sizing: border-box;
 			border: 1px solid rgba(0, 0, 0, 0.205);
 			border-radius: 10px;
 			padding: 25px;
-			margin: 5% auto 0;
+			margin: 0 auto 0;
 			position: relative;
 			z-index: 1;
+
+			@include from(s){
+				margin: 0 auto;
+			}
 			h2{
 				color: var(--color-skyLow);
 			}
@@ -56,6 +100,35 @@
 					@include from(s){
 						text-align: center;
 					}
+			}
+
+			.table-horse{
+				margin-top: 2rem;
+				h3{
+					text-align: left;
+				}
+				
+				table,th {
+					border: solid 1px rgba(0, 0, 0, 0.199);
+					padding: 10px;
+				}
+				td{
+					border: solid 1px rgba(0, 0, 0, 0.199);
+					padding: 10px;
+					color: var(--color-grayLow);
+				}
+				
+				table {
+					border-collapse:collapse;
+					caption-side:bottom;
+				}
+				
+				caption {
+					font-size: 16px;
+					font-weight: bold;
+					padding-top: 5px;
+				}
+
 			}
 			.font-low{
 				color: var(--color-grayLow);

@@ -30,13 +30,23 @@ body {
 	max-height: 400px;
 }
 .main-footer {
-	z-index: 0;
-	background 		: var(--color-sky);
-	color      		: #FFF;
-	padding    		: 2rem 0;
+	background: rgba(255, 0, 0, 0);
+	color      		: rgb(143, 143, 143);
+	padding    		: 5rem 0;
 	font-size  		: fontSize(small);
 	margin-top 		: auto;
 	
+	.background-footer{
+
+		img{
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+		}
+
+	}
 	.ul-footer{
 		list-style: none;
 	}

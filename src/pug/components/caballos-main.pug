@@ -1,7 +1,7 @@
 div(class="main-con")
-	div(class="ed-grid lg-grid-6")
-		img(src="/assets/img/caballos.jpg", alt="")
-	div(class="main-cont")
+	div(class="bg-caballos")
+		img(src="/assets/img/section-caballo.jpg", alt="")
+	div(class="main-cont ed-grid")
 		div(class="container-cont")
 			h1(class="titles") Información de Caballos
 			div(class="sub-cont")
@@ -9,4 +9,8 @@ div(class="main-con")
 					br 
 					div(class="text-cont")
 						include:markdown-it(html) ../md/caballos.md
+			div(class="table-horse ed-grid")
+				h3 List of Horse Tracks:
+				include ../config/utilis/table-horses
+
 

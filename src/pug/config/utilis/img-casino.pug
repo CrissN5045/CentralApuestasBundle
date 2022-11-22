@@ -1,0 +1,11 @@
+mixin pushImg(alt, img)
+	div(class="card-itemCasino")
+				div(class="buttons-itemCasino")
+					h3=alt
+					button Jugar Real
+					button Jugar Gratis
+				img(class="img-casino" src=img, alt=alt)
+
+-for(var i =0; i< img_casino.length; i++)
+	-var imgcasino = img_casino[i];
+	+pushImg(imgcasino.alt, imgcasino.img)
