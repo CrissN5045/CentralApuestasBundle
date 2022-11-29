@@ -1,0 +1,928 @@
+
+<!--mixins imported from myStylkeGuide-->
+<!--Mixin top menu--><!DOCTYPE html>
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="This website contains a collection of projects developed by Enrique Estrada using a Gulp boilerplate developed by him" content="content">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width = 320, initial-scale = 2.3, user-scalable = no">
+    <meta name="viewport" content="width = device-width, initial-scale = 2.3, user-scalable = no">
+    <meta name="viewport" content="width = device-width, initial-scale = 2.3, minimum-scale = 1, maximum-scale = 5">
+    <meta name="viewport" content="width = 320, initial-scale = 2.3, user-scalable = no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--X-UA-compatible-->
+    <meta http-equiv="X-UA-compatible" content="IE=11">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!--iphone-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!--PWA tags here-->
+    <meta name="theme-color" content="#0096D9">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/icon_1024.png">
+    <link rel="apple-touch-icon" href="./assets/img/icon_1024.png">
+    <link rel="apple-touch-startup-image" href="./assets/img/icon_1024.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="author" type="text/plain" href="./humans.txt">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml">
+    <script src="https://kit.fontawesome.com/20f3c29ee8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Reglas-deportes | reglas-deportes</title>
+  </head>
+  <body class="reglas-deportes" itemscope itemtype="http://schema.org/WebPage">
+    <!--here start the Main Header-->
+    <header class="main-header"><div class="modal">
+  <div class="modal-container">
+    <div class="modal-left">
+	  <img src="assets/img/logo.png" alt="">
+      <h1 class="modal-title">INGRESO DE USUARIO!</h1>
+      <p class="modal-desc">Llena tus datos, confirma tu cuenta EMPIEZA Y GANA.</p>
+
+	<form name="LoginForm" action="javascript:void(0)" onsubmit="BackEndLogin(this); return false">
+
+      <div class="input-block form-group">
+        <label for="username" class="input-label">Usuario</label>
+        <input type="text" class="form-control" name="username" required placeholder="Usuario">
+      </div>
+
+      <div class="input-block form-group">
+        <label for="password" class="input-label">Contraseña</label>
+        <input type="password" class="form-control" name="password" placeholder="Contraseña" required >
+      </div>
+
+	  <div class="text-center mt-2">
+        <small name="msj_error_lg" class="text-danger"></small>
+      </div>
+      <div class="modal-buttons form-group">
+        <a href="/recuperar-contra.html" class="">No recuerda tu contraseña?</a>
+        <button type="submit" name="btn-login" class="input-button">
+			<span name="msj_loading" id="id-login-loading"></span>
+			<span name="msj_login">Ingresar</span>
+		</button>
+	
+      </div> 
+    <input type="hidden" name="BackEndUrl" value="https://centraldeapuesta.com">
+
+	</form>
+      <p class="sign-up">Aún no tienes una cuenta? <a href="/register.html">Registrate Ahora !</a></p>
+    </div>
+    <div class="modal-right">
+      <img src="assets/img/ufc-ri-modal.png" alt="">
+    </div>
+    <button class="icon-button close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+    		<path d="M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.980469 15.990234 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 z"></path>
+		</svg>
+    </button>
+  </div>
+</div>
+
+<script src="https://images.betimages.com/Betslip/js/quick.login.min.js"></script>
+
+      <nav class="top-nav">
+        <div class="top-nav__container"><a class="top-nav__link" href="/"><img class="top-nav__logo" src="assets/img/logo.png" alt="logo"></a>
+          <ul class="top-nav__menu">
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="lista_apuestas.html">LINEAS DE APUESTA</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="casino.html">CASINO</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="caballos.html">CABALLOS</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="banca.html">BANCA</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="contact.html">CONTACTO</a></li>
+            <li class="top-nav__li"><a class="phone-info whatsapp" href="https://wa.me/56932130074"><i class="fa fa-whatsapp"><i><span class="text-phone"></span></i></i></a></li>
+          </ul>
+          <ul>
+            <div class="btn-ml">
+              <button class="btn-top-nav"><a href="register.html">REGISTRO</a></button>
+              <button class="modal-button btn-top-nav btn-dark">INGRESAR</button>
+            </div>
+          </ul>
+          <button class="top-nav__mb-iconMenu hamburger hamburger--slider-r" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+        </div>
+      </nav>
+      <div class="btn-m-nav btn-ml">
+        <button class="btn-top-nav"><a href="register.html">REGISTRO</a></button>
+        <button class="modal-button-m btn-top-nav btn-dark">INGRESAR</button>
+      </div>
+    </header>
+    <!--here ends the Main Header-->
+    <!--here start the Main Container-->
+    <main class="main-container">
+      <div class="main-con">
+        <div class="bg-reglas-deportes"><img src="/assets/img/slider-sportsrules.jpg" alt=""></div>
+        <div class="main-cont ed-grid container-reglas">
+          <h1 class="titles">Reglas de Deportes</h1>
+          <div class="ed-grid"><h2>En materia de los eventos deportivos</h2>
+<ul>
+<li>
+<p>Todos los eventos deportivos deben jugarse en la fecha y el sitio programado a menos que se especifique lo contrario. Excepciones: Auto racing, Golf, Tenis, MMA, UFC y Boxeo.</p>
+</li>
+<li>
+<p>Carreras de Autos, Golf, Tenis, MMA, UFC y Boxeo no están sujetos a esta regla. Las apuestas seguirán siendo válidas según el Organismo de Gobierno de cada deporte que cancele el evento.</p>
+</li>
+<li>
+<p>Si cualquier evento se pospone y/o se reprograma, el evento no constituirá automáticamente ninguna acción.</p>
+</li>
+<li>
+<p>No reconocemos juegos suspendidos, protestas o decisiones anuladas con fines de apuestas.</p>
+</li>
+<li>
+<p>Las reglas de Las Vegas se aplican a cualquier apuesta que no esté cubierta por las reglas y regulaciones aquí.</p>
+</li>
+<li>
+<p>Para los eventos de ciclismo, los ciclistas pueden emitirse al mismo tiempo, pero se les emitirá una orden de meta que se decide por el acabado fotográfico. Los resultados se tomarán de la posición oficial de finalización en el sitio web principal de eventos.</p>
+</li>
+<li>
+<p>Para todas las proposiciones de jugadores o equipos utilizaremos el sitio web oficial del evento deportivo para declarar al ganador. Ejemplos: WWW.NFL.COM, WWW.NBA.COM etc. Para eventos que no tienen un sitio web asociado, usaremos WWW.ESPN.COM para obtener resultados.</p>
+</li>
+</ul>
+<h3>Para todos los eventos y deportes</h3>
+<ul>
+<li>Nos reservamos el derecho de cancelar cualquier apuesta si la linea de dicho evento era obviamente una linea incorrecta. (REGLA DE LINEA MALA)</li>
+<li>Se cancelarán apuestas si hay prueba de engaño, intento de hackeo o intento intensional de hacer trampa. (REGLA DE ENGAñO)</li>
+<li>También nos reservamos el derecho a cancelar apuestas tomadas una vez que el evento ya haya finalizado o si el resultado se puede deducir por medio del resultado parcial de dicho evento. (REGLA DE TIEMPO MALO)</li>
+<li>Los emparejamientos que sean incorrectos serán cancelados automaticamente. Estos incluyen los participantes incorrectos en el evento o si fueron insertados incorrectamente en el sistema. (REGLA DE EMPAREJAMIENTO INCORRECTO)</li>
+</ul>
+
+            <div class="sport-rules-container">
+              <h3>La siguiente tabla le indica cuando un juego se considera oficial para efectos de apuestas:</h3>
+              <table class="sport-rules__table">
+                <colgroup class="sport-rules--colgroup">
+                  <col class="sport-rules__table--col1">
+                  <col class="sport-rules__table--col2">
+                </colgroup>
+                <tbody class="sport-rules__table--tbody">
+                              <tr class="sport-rules__table--tr"> 
+                                <td class="sport-rules__table--td1">Fútbol Americano</td>
+                                <td class="sport-rules__table--td2">55 minutos de juego</td>
+                              </tr>
+                              <tr class="sport-rules__table--tr"> 
+                                <td class="sport-rules__table--td1">Fútbol Universitario</td>
+                                <td class="sport-rules__table--td2">55 minutos de juego</td>
+                              </tr>
+                              <tr class="sport-rules__table--tr"> 
+                                <td class="sport-rules__table--td1">Baloncesto</td>
+                                <td class="sport-rules__table--td2">Todas las competiciones/ligas excepto la NBA deben pasar al menos 35 minutos para la acción a menos que se especifique lo contrario.</td>
+                              </tr>
+                              <tr class="sport-rules__table--tr"> 
+                                <td class="sport-rules__table--td1">Pro Baloncesto</td>
+                                <td class="sport-rules__table--td2">43 minutos de juego</td>
+                              </tr>
+                              <tr class="sport-rules__table--tr"> 
+                                <td class="sport-rules__table--td1">Baloncesto Universitario</td>
+                                <td class="sport-rules__table--td2">35 minutos de juego</td>
+                              </tr>
+                              <tr class="sport-rules__table--tr"> 
+                                <td class="sport-rules__table--td1">Hockey</td>
+                                <td class="sport-rules__table--td2">55 minutos de juego</td>
+                              </tr>
+                              <tr class="sport-rules__table--tr"> 
+                                <td class="sport-rules__table--td1">Líneas de Dinero en Béisbol</td>
+                                <td class="sport-rules__table--td2">5 entradas (4 1/2 si el equipo local está ganando)</td>
+                              </tr>
+                              <tr class="sport-rules__table--tr"> 
+                                <td class="sport-rules__table--td1">Totales de Béisbol</td>
+                                <td class="sport-rules__table--td2">9 entradas (8 1/2 si el equipo local está ganando)</td>
+                              </tr>
+                              <tr class="sport-rules__table--tr"> 
+                                <td class="sport-rules__table--td1">Líneas de Carreras</td>
+                                <td class="sport-rules__table--td2">9 entradas (8 1/2 si el equipo local está ganando)</td>
+                              </tr>
+                              <tr class="sport-rules__table--tr"> 
+                                <td class="sport-rules__table--td1">TENIS</td>
+                                <td class="sport-rules__table--td2">UNA bola servida</td>
+                              </tr>
+                              <tr class="sport-rules__table--tr"> 
+                                <td class="sport-rules__table--td1">Fútbol (Soccer)</td>
+                                <td class="sport-rules__table--td2">Si un partido se suspende antes de que se alcance el tiempo completo y no se complete el mismo día, las apuestas sobre el resultado del partido se considerarán nulas y todas las apuestas serán reembolsadas. Incluye líneas de gol, líneas de dinero y totales.</td>
+                              </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="accordion v1">
+              <div class="a-container">
+                <p class="a-btn">Futbol Americano <span></span></p>
+                <div class="a-panel"><h3>NFL</h3>
+<ul>
+<li>Los totales de equipo de la segunda mitad incluyen tiempos extras.</li>
+<li>Líneas del 4to cuarto no incluyen tiempos extras.</li>
+<li>Pooles de doble resultado consisten en el ganador de la 1era mitad y el ganador del partido.</li>
+<li>Pooles de 1ra jugada de anotación y margen de victoria incluyen tiempos extra. Pooles de doble resultado incluyen tiempos extra solo en la TEMPORADA REGULAR.</li>
+<li>En el caso de que el evento del Super Bowl cambie de fecha o lugar, todas las jugadas abiertas del juego o relacionadas al juego (proposiciones) serán válidas y se procesarán normalmente cuando el juego sea jugado.</li>
+</ul>
+<h3>CFB</h3>
+<ul>
+<li>Los totales de equipo de la segunda mitad incluyen tiempos extras.</li>
+<li>Líneas del 4to cuarto no incluyen tiempos extras.</li>
+<li>Pooles de doble resultado consisten en el ganador de la 1era mitad y el ganador del partido.</li>
+<li>Pooles de 1ra jugada de anotación y margen de victoria incluyen tiempos extra.</li>
+<li>Pooles de doble resultado NO incluyen tiempos extra. La segunda mitad y cada cuarto deben ser completados para tener acción Todas las jugadas de segunda mitad incluyen tiempos extra</li>
+</ul>
+
+                  <div class="accordion v1"></div>
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">Basketball <span></span></p>
+                <div class="a-panel"><h3>NBA</h3>
+<ul>
+<li>Los totales de equipo de la segunda mitad incluyen tiempos extras.</li>
+<li>Las líneas del 4to cuarto no incluyen tiempos extras.</li>
+<li>Pooles de doble resultado consisten en el ganador de la 1era mitad y el ganador del partido.</li>
+<li>Ambos pooles de doble resultado y margen de victoria incluyen tiempos extra.</li>
+</ul>
+
+                  <div class="accordion v1"></div>
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">Baseball <span></span></p>
+                <div class="a-panel"><ol>
+<li>
+<p>El juego es oficial después de 5 innings a menos que el equipo en casa este ganando después de 4 1/2 innings.</p>
+</li>
+<li>
+<p>Después de 9 innings, si el juego es cancelado o suspendido, la puntuación final (para efectos de apuestas) es determinado en el último inning completo a menos que el equipo en casa anote para empatar o tome ventaja en el 2da parte del inning. En este caso, el ganador será determinado por el resultado de cuando el juego es terminado.?</p>
+</li>
+<li>
+<p>Los juegos suspendidos no se corren al día siguiente.</p>
+</li>
+<li>
+<p>Cuando se apuesta en el total de carreras (over/under) el juego debe jugarse 9 innings completos (o 8 1/2 si el equipo en casa esta ganando). Si el juego es suspendido después de los 9 innings, el resultado final (para efectos de apuestas) es determinado con el último inning completo a menos que el equipo en casa anote para empatar o tome ventaja en la 2da parte del inning. En este caso, el ganador será determinado por el resultado de cuando el juego se termine. Todas las apuestas en el total de las carreras es con los Listed Pitchers (LP). Si los pitchers programados para lanzar a la hora de la apuesta no tiran al menos una bola, entonces la apuesta será cancelada.</p>
+</li>
+<li>
+<p>Las apuestas en el total de las carreras son reembolsadas en el caso de que haya un cambio de pitcher.</p>
+</li>
+<li>
+<p>Las apuestas en los Run lines serán tratadas de la misma manera que tratamos los totales. (ver regla #4)</p>
+</li>
+<li>
+<p>Las apuestas en baseball serán aceptadas de la siguiente manera:</p>
+<ul>
+<li>a. ACTION: equipo contra equipo, sin importar quienes sean los pitchers.</li>
+<li>b. ONE LISTED PITCHER: una apuesta en o en contra un pitcher en especifico, sin importar el otro pitcher.</li>
+<li>c. LISTED PITCHER: una apuesta que específica que los 2 pitcher programados a empezar deben empezar. Cualquier cambio de pitcher significa un &quot;NO ACTION&quot;.</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>NOTA</strong>: los pitchers programados para empezar el partido son los que tiran al menos la primera bola. En el evento de que cambie un pitcher antes de que comience el partido, el precio del Money line puede ser ajustado y su apuesta puede ser cambiada si usted jugo ACTION.</p>
+</blockquote>
+<p><strong>RAIN OR SHINE RULE</strong>: Las proposiciones en baseball incluyendo el 1st Store, Yes/No store in 1st inning, 5 inning line, son calificados en el momento en que esto ocurra (el juego debe entrar en el sexto inning). La apuesta es valida sin importar si el juego es suspendido por lluvia.</p>
+<p>Para cualquier Prop, el juego debe ser jugado por completo para ser válido. Juegos q son programados para solo 7 Entradas (6.5 si el equipo casa está ganando) son considerados completos.</p>
+<p>Para las proposiciones de baseball, todos los pitchers programados deberán jugar. En la proposición: player to get most total bases, the following system is used: single= 1 base, doble = 2 bases, triple= 3 bases, HR= 4 bases. Ambos jugadores y pitchers programados para empezar deben jugar para que haya acción.</p>
+<p>Para el Clásico Mundial de Béisbol (World Baseball Classic), durante las primeras dos rondas de juego, ambas &quot;sides&quot; y &quot;totals&quot; tienen acción sin importar la &quot;Mercy Rule&quot;. Para las semifinales y finales del WBC, la &quot;Mercy Rule&quot; no está en vigor, por lo tanto, los juegos siguen las reglas normales de playoff. En caso de discrepancia, ver las Normas y Reglamentos del World Baseball Classic Official Tournament.</p>
+<h2>Líneas de Baseball</h2>
+<p>Los juegos de baseball pueden ser apostados de diferentes maneras: moneyline, runline y totales.</p>
+<p>El método más popular es el Moneyline. Usamos una línea de 10c la cual sube de precio a medida que el la línea sube. Para los totales usamos una línea de 20c. El equipo favorito tiene el número negativo a la par mostrando el precio que tienes que jugar para apostar en ese juego en particular. El Underdog es el equipo que menos probabilidades tiene de ganar y a la par de este esta la línea del total.</p>
+<p>Seguidamente ponemos un ejemplo de una línea regular en un juego de baseball:</p>
+<ul>
+<li>Si usted quiere apostar $100 en los Mets, usted deberá poner $134 para ganar $100.</li>
+<li>Si usted quiere apostar $100 en los Marlins, deberá poner $100 para ganar $124.</li>
+<li>Si usted quiere apostar $100 de que el total se va arriba de 9, deberá poner $105 para ganar $100</li>
+<li>Si usted desea apostar $100 de que el total se va debajo de 9, deberá poner $115 para ganar $100.</li>
+</ul>
+<p>Como el pitcher que esta programado para empezar el juego tiene mucho que ver con el resultado del juego, usted puede especificar las siguientes opciones de pitchers a la hora de realizar su apuesta:</p>
+<h3>Action (AG):</h3>
+<p>Su apuesta es equipo contra equipo, sin importar quienes sean los pitchers programados a empezar. En caso de un cambio de pitcher, el precio será ajustado a la línea inicial del pitcher que ahora va a empezar.</p>
+<h3>Listed Pitcher (LP):</h3>
+<p>Su apuesta se basa en que los 2 pitchers que están programados para empezar a la hora de su apuesta deben empezar y tirar al menos una bola para que su apuesta tenga acción. Los 2 pitchers deberán empezar y si no es así se declarara la apuesta como NO ACTION.</p>
+<h3>Your Team's Pitcher (PT):</h3>
+<p>Una apuesta con el pitcher especifico del equipo apostado sin importar el otro pitcher. Este pitcher deberá tirar al menos la primera bola para que la apuesta sea ACTION, si este no empieza entonces se declarara NO ACTION. Cualquier pitcher podrá empezar para el equipo contrario. En caso de que haya un cambio de pitcher para el equipo contrario, entonces la línea se ajustara a la nueva línea con el nuevo pitcher programado.</p>
+<h3>Opposing Pitcher (TP):</h3>
+<p>Una apuesta con el pitcher programado del equipo contrario al apostado, sin importar el otro pitcher. Cualquier pitcher podrá empezar para el equipo apostado pero el pitcher programado para el equipo contrario deberá lanzar al menos la primera bola. En caso de un cambio de pitcher en el equipo apostado, el precio de su apuesta será ajustado a la nueva línea del nuevo pitcher.</p>
+<p>La otra manera de apostar en un juego de baseball, es apostar en el Run Line. El favorito será -1 1/2 runs y podrá ser mas o menos dinero??. (plus o minus Money)
+A continuación un ejemplo de lo que es un Run Line:</p>
+<p>Mets - Hampton	+1 1/2 +115
+Marlins - Dempster	-1 1/2 -135</p>
+<p>Si usted realiza una apuesta por $100 en los Mets, usted tiene a los mets menos 1 1/2 carrera, arriesgando $100 para ganar $115. Si usted quisiera apostar $100 en los Marlins, usted tendrá a los Marlins mas 1 1/2 carrera arriesgando $135 para ganar $100.</p>
+<p>El juego deberá durar al menos 8 1/2 innigs para que los Run Lines y los totales tengan acción. No hay acción si el juego no dura al menos 8 1/2 innings sin importar el resultado de éste.</p>
+<p>Para los Run Lines, Totales y Proposiciones de baseball los Pitcher son automáticamente los programados en el juego. De haber un cambio de pitcher, la apuesta es automáticamente cancelada y los fondos de ese juego en particular reembolsados a su cuenta en el momento de finalizarse el juego.</p>
+
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">Hockey <span></span></p>
+                <div class="a-panel"><p><strong>NHL</strong></p>
+<ul>
+<li>
+<p>Los partidos son oficiales después de 55 minutos de juego.</p>
+</li>
+<li>
+<p>Las apuestas serán aceptadas usando la Línea de Gol o línea de Dinero, así como el Total de Goles anotados (altas/bajas) en el juego por ambos equipos.</p>
+</li>
+<li>
+<p><strong>Se ofrecerán 2 líneas para los juegos de Hockey</strong>:</p>
+<ol>
+<li>
+<p>RESULTADO COMPLETO DEL JUEGO - LÍNEA DE DINERO, LÍNEA DE DISCO Y TOTAL: El juego debe jugarse hasta su finalización. En el caso de que un partido se decida en la prórroga o en una tanda de penaltis, se añadirá un gol a la puntuación del equipo ganador.</p>
+</li>
+<li>
+<p>RESULTADO DE 60 MINUTOS: LÍNEA DE DINERO, LÍNEA DE PUCK o LÍNEA DE GOL MÁS TOTAL: Esta apuesta se calificará después del tiempo reglamentario y no incluye la PRÓRROGA (tiempos extra) ó PENALTIS. Los GOLES anotados en la prórroga o en los penaltis NO cuentan para ninguna apuesta en el RESULTADO DE 60 MINUTOS..</p>
+</li>
+</ol>
+</li>
+</ul>
+<p>A continuación se muestra un ejemplo de un juego típico de hockey:</p>
+<p>Penguins	-145 5.5 -150
+Sharks	+125 5.4 +130
+GL Penguins	-1 1/2 +130
+GL Sharks	+1 1/2 -150</p>
+<ul>
+<li>
+<p>Si quiere hacer una apuesta de $100 en los Pingüinos, estaría arriesgando $145 para ganar $100</p>
+</li>
+<li>
+<p>Si quiere hacer una apuesta de $100 en los Sharks, arriesgaría $100 para ganar $125.</p>
+</li>
+<li>
+<p>Si quiere hacer una apuesta de $100 en las altas de 5.5 goles, arriesgaría $150 para ganar $100.</p>
+</li>
+<li>
+<p>Si quiere hacer una apuesta de $100 en las bajas de 5.5 goles, arriesgaría $100 para ganar $130.</p>
+</li>
+<li>
+<p>Si quiere hacer una apuesta de $100 en la línea de gol (LG) de los Pingüinos -1 1/2, arriesgaría $100 para ganar $130.</p>
+</li>
+<li>
+<p>Si quiere hacer una apuesta de $100 en LG Sharks + 1 1/2 goles, arriesgaría $150 para ganar $100.</p>
+</li>
+<li>
+<p>Ejemplo de un juego de penaltis: Un juego entra en la prórroga (tiempos extra) con una puntuación de Equipo A 3 y Equipo B 3 (empatado 3-3) y sin puntuaciones de equipo en el período de prórroga.</p>
+</li>
+<li>
+<p>El ganador de los tiros de penaltis recibirá un gol que hará el marcador final Equipo A 4 y Equipo B 3. Con este resultado el total para ambos equipos combinados será de 7. Cualquier apuesta de 60 MINUTOS RESULTADO se decidirá con el resultado de 60 minutos de 3-3 empate.</p>
+</li>
+</ul>
+<p>Ejemplo de un juego de penaltis: Un juego entra en la prórroga (tiempos extra) con una puntuación de Equipo A 3 y Equipo B 3 (empatado 3-3) y sin puntuaciones de equipo en el período de prórroga. El ganador de los tiros de penaltis recibirá un gol que hará el marcador final Equipo A 4 y Equipo B 3. Con este resultado el total para ambos equipos combinados será de 7. Cualquier apuesta de 60 MINUTOS RESULTADO se decidirá con el resultado de 60 minutos de 3-3 empate.</p>
+<ul>
+<li>
+<p>Los Props de Hockey incluyendo 1a Puntuación, 1 Línea de Período se califican tan pronto como ocurre ese evento. Las apuestas son definitivas incluso si el juego se suspende.</p>
+</li>
+<li>
+<p>En las Proposiciones de Jugadores, ambos jugadores deben jugar en el partido para que la apuesta sea válida. En los eventos de la quiniela (pool) TODOS LOS JUGADORES SON VÁLIDOS a menos que se especifique lo contrario. Las proposiciones de hockey se pueden utilizar para Apuestas Directas, Combinadas (Parlays) y/o Round Robins (TEASERS NO) siempre y cuando el otro equipo en dichas apuestas no pertenezca a la misma familia. Cualquier apuesta dentro de la misma familia (O PROPS UTILIZADO EN TEASERS) será cancelada por nosotros sin previo aviso.</p>
+</li>
+</ul>
+
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">Fútbol Soccer <span></span></p>
+                <div class="a-panel"><h3>Major League Soccer:</h3>
+<p>La temporada regular incluye:</p>
+<ul>
+<li>El resultado de 90- minutos solo para el total y el lado.</li>
+<li>No hay tiros de penal al final del partido, los equipos pueden terminar en empate.</li>
+</ul>
+<h3>Copa del Mundo, Eurocopa, Copa America:</h3>
+<ul>
+<li><strong>1era Ronda:</strong> Spread Wagering y three way result</li>
+<li><strong>Rondas siguientes:</strong> Spread wagering, three way result and final result wagering. (el total en el juego no incluye penales).</li>
+</ul>
+<h3>English Premier League, Italian Serie A, La Liga, Bundesliga, Dutch League:</h3>
+<ul>
+<li><strong>Temporada regular:</strong> spread wagering y three way result.</li>
+</ul>
+<p><strong>UEFA Champions League, UEFA Cup:</strong></p>
+<ul>
+<li>1era ronda: Spread wagering y three way result.</li>
+<li>Rondas siguientes:
+<ul>
+<li>Home and home games (2 games matches)</li>
+<li><strong>1er juego:</strong> spread wagering y three way result</li>
+<li><strong>2do juego:</strong> spread wagering y three way result. No incluye tiempo extra ni penales. No tie breaker formula is applied?</li>
+<li><strong>Ronda Final:</strong> one game: spread wagering, three way result y final result wagering.</li>
+</ul>
+</li>
+</ul>
+<h3>Líneas de Soccer</h3>
+<p>Para los juegos de soccer puede haber diferentes tipos de líneas:</p>
+<p><strong>1. Apuesta clásica (90 Minutos: 1a y 2a mitad más tiempo adicional por lesiones):</strong>
+Solo incluye la 1a y 2a mitad más el tiempo de lesión para decidir el ganador de la apuesta. No incluye Tiempos Extra o Penales. Los posibles resultados en el juego incluyen una victoria en casa, una victoria de visitante o un empate.</p>
+<p><strong>2. Apuestas para Avanzar/Levantar la Copa:</strong>
+Incluye el tiempo reglamentario de 90 minutos más cualquier lesión o tiempo extra jugado. Usted apuesta al equipo que avanzará o será declarado ganador del partido, por lo tanto, los penales ayudarán a determinar al ganador. Un equipo debe ganar el partido.</p>
+<p><strong>3. Resultado de Tres Vías (90 minutos: 1a y 2a mitad más tiempo de reposición por lesión):</strong>
+Incluye la 1a y 2a mitad más tiempo de reposición por lesión, no incluye tiempos extra ni penales. Puede apostar en el Equipo A, el Equipo B o un Empate.</p>
+<p><strong>4. Apuestas en Totales (90 minutos: 1a y 2a mitad más tiempo de reposición por lesión):</strong>
+Incluye la 1a y 2a mitad más el tiempo de reposición por lesión. No incluye tiempos extra ni penales a menos que se especifique lo contrario.</p>
+<p><strong>5. Puntuación Correcta (90 Minutos: 1a y 2a mitad más el tiempo de reposición por lesión):</strong>
+Incluye 1a y 2a mitad más el tiempo de reposición por lesión. No incluye tiempos extra ni penales a menos que se especifique lo contrario.</p>
+<p><strong>6. Resultado Doble (1a mitad + resultado final del partido):</strong>
+Incluye la 1a y 2a mitad más el tiempo de reposición por lesión. No incluye tiempos extra ni penales a menos que se especifique lo contrario.</p>
+<p><strong>7. Márgen de Victoria (90 Minutos: 1a y 2a mitad más el tiempo de reposición por lesión):</strong>
+Incluye la 1a y 2a mitad más el tiempo de reposición por lesión. No incluye tiempos extra ni penales a menos que se especifique lo contrario.</p>
+<p><strong>8. Proposiciones de Fútbol (soccer):</strong>
+Todos los PROPS son para el tiempo reglamentario de 90 minutos. NO incluyen tiempos extra ni penales a menos que se especifique lo contrario.</p>
+<p><strong>9. Gol Temprano/Tarde:</strong>
+La calificación de estas proposiciones se determinará por el tiempo de el gol proporcionada por el sitio web oficial no en el momento real en que se produjo el gol. En el fútbol si se hace un gol a las 22:35 la hora oficial de ese gol será 23:00. Por ejemplo, si la hora del Gol Temprano se fijó a las 26:00 y la meta se hizo a las 25:20 haciendo la hora oficial de ese gol a las 26:00 , entonces NO GOL ANTES de las 26:00 será el ganador.</p>
+<h3>Líneas Asian Handicap</h3>
+<ul>
+<li><strong>Linea de Gol Asian Handicap line ¼ (0.25).</strong>
+<ul>
+<li>Equipo -¼ (-0.25) goles:
+<ul>
+<li>Gane por cualquier resultado. Todas las apuestas son ganadoras.</li>
+<li>Empate: Mitad del dinero en riesgo se reintegra. La otra mitad se declara como perdedora.</li>
+<li>Perdida por cualquier resultado: Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+<li>Equipo +¼ (+0.25) goles:
+<ul>
+<li>Gane por cualquier resultado. Todas las apuestas son ganadoras.</li>
+<li>Empate : La mitad de la apuesta gana al precio fijado. La otra mitad se reembolsa.</li>
+<li>Perdida por cualquier resultado. Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Linea de Gol ½ (0.5).</strong>
+<ul>
+<li>Equipo -½ (-0.5) goles:
+<ul>
+<li>Gane por cualquier resultado: Todas las apuestas son ganadoras.</li>
+<li>Empate: Todas las apuestas son perdedoras.</li>
+<li>Perdida por cualquier resultado: Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+<li>Equipo +½ (+0.5) goles:
+<ul>
+<li>Gane por cualquier resultado: Todas las apuestas son ganadoras.</li>
+<li>Empate: Todas las apuestas son ganadoras.</li>
+<li>Perdida por cualquier resultado: Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Linea de Gol ¾ (0.75)</strong>
+<ul>
+<li>Equipo -¾ (-0.75) goles:
+<ul>
+<li>Gane por 2 o mas: Todas las apuestas son ganadoras.</li>
+<li>Gane por exactamente 1 gol : La mitad de la apuesta gana al precio fijado. La otra mitad se reembolsa.</li>
+<li>Empate o perdida por cualquier resultado: Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+<li>Equipo +¾ (+0.75) goles:
+<ul>
+<li>Empate o gane por cualquier resultado: Todas las apuestas son ganadoras.</li>
+<li>Pérdida por exactamente 1 gol: Mitad de dinero en riesgo se reembolsa. La otra mitad se declara perdedora.</li>
+<li>Pérdida por dos o mas goles: Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Linea de Gol 1.</strong>
+<ul>
+<li>Equipo -1 gol:
+<ul>
+<li>Gane por dos o más: Todas las apuestas son ganadoras.</li>
+<li>Gane por exactamente un gol: Todas las apuestas son reembolsadas.</li>
+<li>Empate o pérdida: Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+<li>Equipo +1 goals:
+<ul>
+<li>Gane por cualquier resultado y empate: Todas las apuestas son ganadoras.</li>
+<li>Perdida por exactamente 1 gol: Todas las apuestas son reembolsadas.</li>
+<li>Perdida por 2 o más goles: Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Línea de Gol 1 ¼ (1.25).</strong>
+<ul>
+<li>Equipo -1 ¼ (-1.25) goals:
+<ul>
+<li>Gane por dos o mas goles: Todas las apuestas son ganadoras.</li>
+<li>Gane por exactamente 1 gol. La mitad del dinero en riesgo se reembolsa. La otra mitad se declara perdedora.</li>
+<li>Empate o pérdida por cualquier resultado. Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+<li>Equipo +1 ¼ (+1.25) goles:
+<ul>
+<li>Gane por cualquier resultado o empate: Todas las apuestas son ganadoras.</li>
+<li>Pérdida por exactamente 1 gol: La mitad de la apuesta gana al precio fijado. La otra mitad se reembolsa.</li>
+<li>Pérdida por 2 o mas goles. Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Línea de goles 1 ½ (1.5).</strong>
+<ul>
+<li>Equipo -1 ½ (-1.5) goles:
+<ul>
+<li>Gane por dos o mas goles: Todas las apuestas son ganadoras.</li>
+<li>Gane por exactamente 1 gol, empate o pérdida por cualquier marcador: Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+<li>Equipo +1 ½ (+1.5) goals:
+<ul>
+<li>Pérdida por exactamente 1 gol, empate o gane con cualquier resultado: Todas las apuestas son ganadoras.</li>
+<li>Pérdida por dos o mas goles: Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Línea de goles 1 ¾ (1.75) goles.</strong>
+<ul>
+<li>Equipo -1 ¾ (-1.75) goles:
+<ul>
+<li>Gane por 3 o mas goles: Todas las apuestas son ganadoras.</li>
+<li>Gane por exactamente 2 goles: La mitad de la apuesta gana al precio fijado. La otra mitad se reembolsa.</li>
+<li>Gane por un gol, empate o pérdida por cualquier marcador: Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+<li>Equipo +1 ¾ (+1.75) goles:
+<ul>
+<li>Pérdida por 1 gol , empate o gane por cualquier resultado: Todas las apuestas son ganadoras.</li>
+<li>Pérdida por exactamente 2 goles Mitad de dinero en riesgo se reembolsa. La otra mitad se declara perdedora.</li>
+<li>Pérdida por 3 o más goles : Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Línea de goles 2.</strong>
+<ul>
+<li>Equipo -2 goles:
+<ul>
+<li>Gane por 3 o mas goles: Todas las apuestas son ganadoras.</li>
+<li>Gane por exactamente 2 goles: Todas las apuestas se reembolsan.</li>
+<li>Gane por 1 gol, empate o pérdida por cualquier resultado: Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+<li>Equipo +2 goals:
+<ul>
+<li>Pérdida por 1 gol, empate o gane por cualquier resultado: Todas las apuestas son ganadoras.</li>
+<li>Pérdida por exactamente 2 goles: Todas las apuestas se reembolsan.</li>
+<li>Pérdida por 3 o más goles: Todas las apuestas son perdedoras.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Totales Asian Handicap</strong>
+<ul>
+<li><strong>Under ¾</strong> Con 0 goles marcados en el partido, la apuesta es ganadora; con 1 gol marcado en el partido, la mitad de la apuesta pierde; con 2 o mas goles en el partido, la apuesta es perdedora.</li>
+<li><strong>Over ¾</strong> Con 0 goles marcados en el partido, la apuesta en perdedora; con 1 gol marcado en el partido, la mitad de la apuesta gana; con 2 o mas goles en el partido, la apuesta es ganadora.</li>
+<li><strong>Under 1¼</strong> Con 0 goles marcados en el partido, la apuesta es ganadora; con 1 gol marcado en el partido, la mitad de apuesta gana; con 2 o mas goles en el partido, la apuesta es perdedora.</li>
+<li><strong>Over 1¼</strong> Con 0 goles marcados en el partido, la apuesta pierde; con 1 gol marcado en el partido, la mitad de la apuesta pierde; con 2 o mas goles en el partido, la apuesta es ganadora.</li>
+<li><strong>Under 1¾</strong> Con 0 o 1 gol en el partido, la apuesta es ganadora; con 2 goles en el partido, la mitad de la apuesta pierde; con 3 o mas goles en el partido la apuesta es perdedora.</li>
+<li><strong>Over 1¾</strong> Con 0 o 1 gol en el partido, la apuesta es perdedora; con 2 goles en el partido la mitad de la apuesta es ganadora; con 3 o mas goles, la apuesta es ganadora.</li>
+<li><strong>Under 2¼</strong> Con 0 o 1 gol en el partido, la apuesta es ganadora; con 2 goles en el partido, la mitad de la apuesta es ganadora; con 3 o mas goles en el partido, la apuesta es perdedora.</li>
+<li><strong>Over 2¼</strong> Con 0 o 1 gol la apuesta es perdedora; con 2 goles en el partido la mitad de la apuesta pierde; con 3 o mas goles la apuesta es ganadora.</li>
+<li><strong>Under 2¾</strong> Con 0, 1 o 2 goles, la apuesta es ganadora; con 3 goles en el partido la mitad de la apuesta pierde; con 4 o mas goles la apuesta es perdedora.</li>
+<li><strong>Over 2¾</strong> Con 0, 1 o 2 goles en el partido, la apuesta es perdedora; con 3 goles en el partido, la mitad de la apuesta gana; con 4 o mas goles, la apuesta es ganadora.</li>
+</ul>
+</li>
+</ul>
+
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">Golf <span></span></p>
+                <div class="a-panel"><h3>Golf</h3>
+<p><strong>Lo que ofrecemos para apostar Golf:</strong></p>
+<ol>
+<li>
+<p>Para ganar el torneo: Los clientes apuestan a que uno de los jugadores sea el campeón del torneo.</p>
+</li>
+<li>
+<p>Para terminar en el Top 5: Los 5 primeros finalistas y cualquiera que empató con el quinto finalista.</p>
+</li>
+<li>
+<p>Para terminar en el Top 10: Los 10 mejores finalistas y cualquiera que empató con el décimo finalista.</p>
+</li>
+<li>
+<p>Emparejamientos: Emparejamos jugadores y el cliente elige uno de ellos para tener un mejor registro que el otro. Ofrecemos Emparejamientos para todo el torneo y en los principales eventos también ofrecemos apuestas para Emparejamientos de las Rondas.</p>
+</li>
+<li>
+<p>Apuestas de 3 Bolas: En juegos de 3 Ball Betting, 3 golfistas se enfrentan y el golfista con la mejor puntuación gana el grupo. Las apuestas de 3 bolas se pueden ofrecer para todo el torneo o para una ronda específica. Si dos o más jugadores están empatados por la victoria en el grupo, se aplicará la regla de empate.</p>
+</li>
+<li>
+<p>Tiros de 6 Bolas: En juegos de 6 Ball Shooter, 6 golfistas se enfrentan y el golfista con la mejor puntuación gana el grupo. Se puede ofrecer 6 Ball Shooter para todo el torneo o para la ronda específica. Si dos o más jugadores están empatados en la victoria, se aplicará la regla de empate.</p>
+</li>
+<li>
+<p>Jugador Principal en un grupo: En torneos importantes, ofrecemos grupos como el mejor jugador AMERICANO en el torneo. En tales piscinas, si se producen empates para la mejor posición, se aplicará la regla del calor muerto.</p>
+</li>
+<li>
+<p>Líder de ronda: En torneos importantes, ofrecemos un grupo para el mejor puntaje en una ronda de juego específica. En dichos grupos, si se producen empates para obtener la mejor puntuación, se aplicará la regla del calor muerto.</p>
+</li>
+</ol>
+<p><strong>Regla Dead Heat</strong></p>
+<p>Para las apuestas de golf que contiene más de dos participantes, tales como 3 Bolas, 6 Shooter Ball mejores jugadores en un grupo y el líder de Ronda (S), por ejemplo, que dos o más jugadores empatan en el mismo lugar se aplica la regla de empate de la siguiente manera:
+La apuesta se reduce de acuerdo con la cantidad de jugadores que empatan y luego se aplica a las cuotas completas con el resto de la apuesta considerada como perdida.</p>
+<p><strong>Por ejemplo:</strong></p>
+<ul>
+<li>
+<p>Apuesta $ 150 con una probabilidad de +200 y 2 jugadores empatan en la misma posición. Se pierde la mitad de la apuesta: $ 75, la otra mitad gana y se le pagan las mismas probabilidades. Entonces $ 75 gana a +200 = $ 150 - $ 75 = $ 75 netos.</p>
+</li>
+<li>
+<p>Si 3 jugadores empatan en la misma posición, entonces: dos tercios de la apuesta se pierden - $ 100, los terceros $50 restantes ganan a +200.</p>
+</li>
+</ul>
+<p><strong>Tenga en cuenta que esta regla no se aplica a los enfrentamientos de dos jugadores donde un empate resulta en un empate.</strong></p>
+<p>Para los Emparejamientos, el jugador debe dar el primer golpe para considerarse válido. Si un jugador no da el primer golpe, entonces cualquier apuesta que lo involucre se considerará inválida y será cancelada. La excepción a esta regla es cuando la apuesta se realiza en una quiniela y todos los jugadores tienen acción independientemente de si comienzan o no el torneo. (por ejemplo: para ganar EL TORNEO)</p>
+<p><strong>Si un jugador se da un primer golpe, es válido independientemente del número de hoyos jugados.</strong></p>
+<p><strong>Para ganar el torneo: Los clientes apuestan a que uno de los jugadores sea el campeón del torneo.</strong></p>
+<p><strong>Fred Funk	- 125</strong>
+<strong>Joe Durant  +105</strong></p>
+<p>En este torneo, si el cliente elige Fred Funk, la apuesta está en Fred Funk para tener un mejor registro que Joe Durant. No necesariamente que Funk debe ganar el campeonato, sino que va a terminar en una mejor posición que Durant. Ambos jugadores deben pegarle a la bola en el torneo para que el la apuesta sea válida. En una apuesta de dos jugadores, el jugador que complete más hoyos será declarado ganador. Si ambos jugadores completan el mismo número de hoyos, la puntuación más baja gana.</p>
+<p>Rondas Específicas: Aparte de las probabilidades de ganar todo el Torneo, también podemos ofrecer cuotas para ganar una Ronda Específica. Así que un cliente puede apostar a un jugador para ganar la 3a ronda solamente. Si este es el caso, especificaremos que la apuesta es solo para la ronda y no para todo el torneo. Ambos jugadores deben salir en la ronda especificada para que la apuesta sea válida. La 4a ronda no incluye juegos post-temporada</p>
+<p>Cuando se utiliza un método de puntuación de puntos como Stableford, el número más alto de puntos gana. La única excepción a esta regla es cuando un torneo se acorta por lluvia y las puntuaciones finales son determinadas por la PGA por lo general volviendo a la última ronda completada.</p>
+<p>SOLO aceptamos Apuestas Directas para Golf, independientemente de si se trata de una apuesta en Para Ganar Torneos, Top 5, Top 10, Emparejamientos de Torneo, Emparejamientos de Rondas o Apuestas de Jugador Principal o Líder. Cualquier otro tipo de apuesta que no sea una Apuesta Directa (Ejemplo: Combinadas (Parlays), Condicionadas, Reversas y/o Round Robins) será cancelada por nosotros sin previo aviso</p>
+
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">Boxeo - Mixed Martial Arts (MMA) - UFC <span></span></p>
+                <div class="a-panel"><p>El boxeo es uno de los deportes más viejos y populares para apostar. Ofreceremos casi todos los torneos en que las Vegas ofrezca líneas para apostar.</p>
+<p><strong>Hay 3 tipos de apuestas de Boxeo:</strong></p>
+<ul>
+<li><strong>To win the fight: (para ganar la pelea).</strong>
+<ul>
+<li>Se escoge al boxeador que el cliente cree ganara la pelea. En caso de empate se cancela la apuesta.</li>
+</ul>
+</li>
+<li><strong>Total of Rounds: ( total de asaltos).</strong>
+<ul>
+<li>El cliente apuesta en que la pelea se durara más o menos asaltos de los ofrecidos. Por ejemplo, en el total de asaltos la línea es 4 1/2 (3 minutos) , y el cliente apuesta que se ira mas de 4 1/2 , esto quiere decir que cree que la pelea durara mas de 4 1/2 asaltos, o sea 4 asaltos completos mas los primeros 1.5 minutos del 5to asalto.</li>
+</ul>
+</li>
+<li><strong>Correct Result Wagering:</strong>
+<ul>
+<li>El cliente puede apostar en cual boxeador ganara la pelea y la manera en que la pelea se ganara. Un Knockout incluye los knockouts técnicos (TKO) y descalificaciones (DQ). Cuando se utilizan las tarjetas de puntuación de los jueces para determinar el resultado de la pelea se conoce como DECISION, sin importar el asalto en que esto ocurra. DRAW (empate) es una opción para apostar, cuando cae en draw, todas las demás opciones son perdedoras.</li>
+</ul>
+</li>
+</ul>
+
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">Tennis <span></span></p>
+                <div class="a-panel"><p><strong>Para Tenis Ofrecemos:</strong></p>
+<ol>
+<li><strong>Para ganar el torneo:</strong> Los clientes apuestan por uno de los jugadores para ser el campeón del Torneo.</li>
+<li><strong>Para ganar el partido:</strong> el cliente elige el jugador que va a ganar el partido. El partido es oficial al momento que una pelota es servida. Después de eso, si un jugador se retira será declarado perdedor sin importar el marcador del partido en dicho momento.</li>
+<li><strong>Props:</strong> El jugador que gana el primer set, el número total de juegos o sets, etc.</li>
+<li><strong>Apuestas del 1er set (quién ganará el set, 1er set props, etc.):</strong> El 1er set deberá completarse para todas las apuestas durante el 1er set para obtener acción. Si después de finalizado el 1er set del partido, este se cancela por cualquier motivo, todas las apuestas del 1er set todavía se consideran buenas.</li>
+<li><strong>Props del Partido: (juegos o apuestas repartidas en sets, apuestas de resultado exacto, etc.):</strong> El partido tiene que finalizar para que las apuestas tengan efecto, si uno de los jugadores se retira o por otras causas el partido no finaliza, todas las apuestas se considerarán como SIN ACCIÓN.</li>
+</ol>
+<p>Todas las apuestas de tenis serán consideradas como buenas, incluso si la fecha y la hora del encuentro cambian debido al clima o cualquier otra causa.</p>
+<blockquote>
+<p>Sólo ACEPTAMOS Apuesta directa sobre Tenis Props y Futuras.
+Cualquier otro tipo de apuestas como Parlays, Apuestas IF, Reverse y / o Round Robin serán canceladas.</p>
+</blockquote>
+
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">Autoracing <span></span></p>
+                <div class="a-panel"><ul>
+<li>Vamos a ofrecer &quot;POOLS&quot; de &quot;futures&quot; para NASCAR, NATIONWIDE, Indy y carreras de F1. En esos &quot;POOLS&quot; de &quot;futures&quot; todas las apuestas se consideran ACTION incluso si el conductor no cumple con los requisitos para la carrera principal.</li>
+<li>Después de las rondas de clasificación se ofrecerán probabilidades de &quot;ganar la carrera&quot;, &quot;Finalizar entre los 3 primeros&quot;, &quot;Top 5&quot; o &quot;Top 10&quot;, &quot;SI/NO en la posición final&quot;, &quot;Enfrentamientos de carrera&quot; y &quot;Apuestas de grupo&quot;. Para todo este tipo de apuestas, el conductor debe iniciar en la carrera principal para que haya acción.</li>
+<li>En &quot;Apuestas en Grupo&quot; si dos o más jugadores empatan por el mejor lugar en el &quot;POOL&quot;, las ganancias de las apuestas se dividirán entre el número de jugadores ganadores.</li>
+</ul>
+<blockquote>
+<p>Sólo aceptamos apuestas directas en matchups de Autoracing, &quot;props&quot; y futuros. Las otras apuestas como Parlays, If Bets, Reverses y/o Round Robins serán cancelados por nosotros.</p>
+</blockquote>
+<p>Las descalificaciones posteriores a la carrera no afectaran o cambiarán el resultado de las apuestas.</p>
+
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">Reglas Generales de Props <span></span></p>
+                <div class="a-panel"><p><strong>Fútbol, Baloncesto, Hockey y TODOS los otros equipos deportivos y propocisiones para jugadores:</strong></p>
+<ol>
+<li>
+<p>Proposiciones de jugadores cara a cara, los dos jugadores tienen que jugar el partido para que la apuesta sea válida.</p>
+</li>
+<li>
+<p>En las proposiciones que involucran a varios jugadores de cada equipo, todos los jugadores son válidos a menos que se especifique lo contrario en la apuesta.</p>
+</li>
+<li>
+<p>En eventos de Quinielas, todos los jugadores son válidos. Si dos o más jugadores empatan por el mejor lugar en la quinela, los precios de las apuestas se dividirán por el número de jugadores ganadores.</p>
+</li>
+<li>
+<p>Las proposiciones de Equipo y Jugador se pueden utilizar para apuestas Directas, Combinadas, Condicionadas y/o Round Robins (TEASERS NO) siempre y cuando el otro equipo en dichas apuestas no pertenezca a la misma familia. Cualquier apuesta dentro de la misma familia (O PROPS UTILIZADO EN TEASERS) será cancelada por nosotros sin previo aviso.</p>
+</li>
+<li>
+<p>Proposiciones de jugadores defensivos, todas las apuestas realizadas en TOTAL de BLOQUEOS (TACKLES) ASISTIDOS incluyen el sistema defensivo total que el jugador acumula, incluyendo los que juega en equipos especiales también. Los Sacks (bloqueo de mariscal de campo) no cuentan para esta apuesta.</p>
+</li>
+<li>
+<p>Para los totales de cada jugador en fútbol y baloncesto, el jugador debe jugar en el partido para que la apuesta sea válida.</p>
+</li>
+<li>
+<p>Para el Fútbol Americano, un 'MUFFED PUNT' (tocar la pelota antes de poseerla) recuperado por el equipo que patea será considerado un 'fumble' (un balón suelto o pifia).</p>
+</li>
+</ol>
+
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">Apuestas Live In-Game Lines <span></span></p>
+                <div class="a-panel"><ul>
+<li>
+<p>Las líneas Live In-Game están disponibles únicamente en apuestas directas hechas por Internet. Todas estas apuestas toman en cuenta la puntuación total del el partido, evento o juego (a menos que se especifique lo contrario).</p>
+</li>
+<li>
+<p>Las líneas Live In-Game serán ofrecidas en importantes eventos y las reglas regulares para el deporte se aplican a tales líneas. Nos reservamos el derecho de remover la línea Live In-Game en cualquier momento durante el juego.</p>
+</li>
+<li>
+<p>Las apuestas de Live In-Game Lines no pueden ser canceladas por el jugador.</p>
+</li>
+</ul>
+<p>Nos reservamos el derecho de cancelar cualquier apuesta de Live In-Game Lines por cualquier razón, incluyendo líneas obviamente malas.</p>
+<blockquote>
+<p><strong>Nota:</strong> El Sistema Automático de Live Wagering tiene su propio grupo de reglas. Estas pueden encontrarse dentro del sistema de Live Wagering.</p>
+</blockquote>
+<p>Para obtener más información póngase en contacto con nuestro departamento de apuestas o de servicio al cliente.</p>
+
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">Tarjetas Parlay <span></span></p>
+                <div class="a-panel"><ul>
+<li>En el caso de un evento o juego suspendido o cancelado, la Tarjeta Parlay continuara en juego y el evento en cuestión será retirado de la Tarjeta (Ejemplo: una Tarjeta Parlay de 5 equipos se convertirá en una Tarjeta Parlay de 4 equipos).</li>
+<li>En el caso de una Tarjeta Parlay de 3 equipos, si un juego es suspendido o cancelado entonces la Tarjeta Parlay no tendrá acción y los fondos serán devueltos al cliente</li>
+</ul>
+
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">WATER POLO <span></span></p>
+                <div class="a-panel"><ol>
+<li>
+<p>Lineas de dinero: a menos que se indique lo contrario, todas las apuestas son únicamente para el tiempo reglamentario y no incluyen tiempos extra ni tiros de penales.</p>
+</li>
+<li>
+<p>El ganador del 1er, 2nd, 3er y 4to cuarto: únicamente los goles anotados durante el tiempo nominado para el periodo cuentan. A menos que se indique lo contrario, los goles anotados en tiempo extra NO cuentan como parte del 4to periodo.</p>
+</li>
+</ol>
+
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">RUGBY <span></span></p>
+                <div class="a-panel"><h3>RUGBY REGLAS GENERALES</h3>
+<p>A menos que se indique lo contrario, todas las apuestas de Rugby se califican en 80 minutos de juego, lo que incluye cualquier tiempo de detención, y no incluye tiempo adicional a menos que se especifique.</p>
+<p>Cuando se ofrece una opción de empate, la apuesta se califica al final de la regulación, no se incluye tiempo adicional.</p>
+<p>Si se cambia el lugar anunciado para el partido, todas las apuestas en ese partido se anularán.</p>
+<p>En el caso de cambio de oponente del que estaba anunciado, todas las apuestas para ese partido serán anuladas.</p>
+<p><strong>Partidos Abandonados</strong>
+Todas las apuestas se anulan aparte de los mercados en los que el resultado ya está determinado.</p>
+<p>Los partidos pospuestos son anulados a menos que se reorganicen y se jueguen en la misma Semana de Rugby (lunes a domingo, hora del Reino Unido incluida).</p>
+<p>El equipo local es el de arriba</p>
+<h2>REGLAS AUSTRALIANAS</h2>
+<p><strong>General Rules</strong>
+Todos los mercados de partidos se calificarán, incluida la prórroga si se juega, a menos que se indique lo contrario. El tiempo reglamentario debe completarse para que las apuestas sean válidas a menos que se indique lo contrario. Si la duración de un partido es cambiada por el organismo rector antes del comienzo del juego, la duración revisada del juego se considerará como el tiempo oficial de regulación para este partido, y todas las apuestas se mantendrán mientras se complete este nuevo tiempo reglamentario.</p>
+<p><strong>Apuestas de Partido</strong>
+Si algún partido termina en empate, incluyendo la prórroga si se juega, las apuestas serán reembolsadas a menos que se ofrezca un precio para el empate. Las apuestas se calificarán solo en el resultado oficial de la AFL.</p>
+<p><strong>Partidos Programados no Jugados</strong>
+Si se cambia el lugar del partido, las apuestas ya realizadas se mantendrán siempre que el equipo local siga siendo designado como tal. Si el equipo local y el equipo visitante de un partido de la lista se invierten, las apuestas realizadas en función del anuncio original se anularán.</p>
+<p>El equipo local es el de arriba</p>
+
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">CRICKET <span></span></p>
+                <div class="a-panel"><h3>CRICKET</h3>
+<p><strong>Incluyendo Veinte/20</strong>
+<strong>General:</strong></p>
+<ol>
+<li>
+<p>Todas las apuestas se liquidarán utilizando el resultado oficial declarado por el organismo rector correspondiente del partido o competición en cuestión.</p>
+</li>
+<li>
+<p>Cambio de lugar, si se cambia el lugar del partido, las apuestas ya realizadas se mantendrán siempre que el equipo local siga siendo designado como tal. Si el equipo local y el equipo visitante de un partido de la lista se invierten, las apuestas realizadas en función del anuncio original se anularán.</p>
+</li>
+<li>
+<p>Si un partido se abandona debido a interferencias externas, las apuestas sobre el resultado para el total del partido se anularán, si no se declara ningún ganador desde el sitio oficial, todas las apuestas al ganador del partido se anularán.</p>
+</li>
+<li>
+<p>Si un partido se ve afectado por factores externos (como el mal tiempo), liquidaremos su apuesta en función de la regla oficial de la competición (esto incluye los partidos afectados por un cálculo matemático como el método Duckworth-Lewis (DL) o el sistema Jayadevan (VJD)<em>).</em> Método Duckworth Lewis / sistema Jayadevan. Estos son sistemas utilizados para ajustar las puntuaciones en caso de un retraso de lluvia durante los partidos de un día, con el fin de dejar el balance del partido inalterado. Los sistemas utilizan el número de 'overs' que cada equipo aún tiene que recibir y el número de 'wickets' que tienen en la mano para alcanzar un resultado oficial.</p>
+</li>
+<li>
+<p>Cuando no se cotiza ningún precio para el empate y las reglas oficiales de la competencia no determinan un ganador, todas las apuestas se calificarán canceladas. En las competiciones en las que un bowl out o super over determina un ganador, las apuestas se establecerán en función del resultado oficial.</p>
+</li>
+</ol>
+<p><strong>Apuestas de Serie:</strong>
+Si una serie empata y no se ofrece ninguna opción de empate, todas las apuestas se reembolsarán.</p>
+<p><strong>Partidos de Prueba:</strong></p>
+<ol>
+<li>
+<p>En caso de que el juego no haya dado lugar al menos a 4 entradas, todas las apuestas sobre el resultado para los totales (altas/bajas) serán anuladas.</p>
+</li>
+<li>
+<p>In case the game did not go at least 4 innings all bets on the outcome for the winner of the match are settled based on the official announcement.</p>
+</li>
+<li>
+<p>Tied Test Match: In the event of a tied test match (i.e. where all innings have been completed and both teams have the same score) all bets on the game will be voided.</p>
+</li>
+<li>
+<p>If a three-way money line with the draw as the third betting option is offered, only those bettors who wagered on the draw will be paid as winners; those who wagered on either team or contestant to win will lose their stake.</p>
+</li>
+<li>
+<p>If a test match is abandoned or disrupted by outside interference (riot, etc) all bets on this match are void.</p>
+</li>
+</ol>
+<p><strong>One Day Internationals:</strong></p>
+<ol>
+<li>
+<p>In case the game did not go at least the official number of overs, all bets on the outcome for the over/under are voided.</p>
+</li>
+<li>
+<p>In case the game did not go at least the official number of overs, all bets on the outcome for the winner of the match are settled based on the official announcement.</p>
+</li>
+<li>
+<p>In matches where a reserve day is used all wagers will stand and carry over to the reserve day.</p>
+</li>
+</ol>
+<p><strong>Twenty/20:</strong></p>
+<ol>
+<li>
+<p>In case the game did not go at least the official number of overs, all bets on the outcome for the over/under are voided.</p>
+</li>
+<li>
+<p>In case the game did not go at least the official number of overs, all bets on the outcome for the winner of the match are settled based on the official announcement.</p>
+</li>
+</ol>
+
+                </div>
+              </div>
+              <div class="a-container">
+                <p class="a-btn">OLYMPIC RULES <span></span></p>
+                <div class="a-panel"><ol start="4">
+<li>
+<p>For multi-way futures betting, all events are ALL ACTION - no refunds.</p>
+</li>
+<li>
+<p>If a particular athlete/team has a yes/no (2-way) price to win the gold medal, then that athlete/team must start competition for action.</p>
+</li>
+<li>
+<p>For Match-Up betting between two athletes / 2 Countries in any event, both athletes /countries must start event for action.</p>
+</li>
+<li>
+<p>For over/under on a countries total medals within a sport, the total is for both the men's and women's competitions within that area - Example: If USA wins 10 medals in men's athletics and 9 in women's athletics, the total medals won by the USA is 19 in Athletics.</p>
+</li>
+<li>
+<p>Events are official after the original medal ceremony. Any subsequent changes to those results do not count.</p>
+</li>
+<li>
+<p>For props on individual athletes, competitor must start the first event they are scheduled to participate for action.</p>
+</li>
+</ol>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--here ends the Main Container-->
+    <!--here start the Main Footer-->
+    <footer class="main-footer">
+      <div class="footer-alig ed-grid m-grid-4 lg-grid-4 row-gap">
+                <ul class="ul-footer">
+                          <li><a href="lista_apuestas.html">Apuestas en Línea</a></li>
+                          <li><a href="caballos.html">Apuestas Caballos</a></li>
+                          <li><a href="casino.html">Casino en Línea</a></li>
+                          <li><a href="banca.html">Opciones del Deposito</a></li>
+                </ul>
+                <ul class="ul-footer">
+                          <li><a href="reglas-deportes.html">Reglas Deportes</a></li>
+                          <li><a href="lista_apuestas.html">Líneas de Apuesta</a></li>
+                          <li><a href="register.html">REGISTRARME!</a></li>
+                </ul>
+                <ul class="ul-footer">
+                          <li><a href="reglas-caballos.html">Reglas de Caballos</a></li>
+                          <li><a href="juego-responsable.html">Juego Responsable</a></li>
+                          <li><a href="privacidad.html">Política de Privacidad</a></li>
+                          <li><a href="reglas-apuestas-envivo.html">Reglas Apuestas en vivo</a></li>
+                </ul>
+        <ul class="footer-imgs">
+          <div><img src="assets/img/logo-mobile.png" alt=""><img src="assets/img/usa18.png" alt=""></div>
+        </ul>
+      </div>
+      <section class="background-footer"><img src="/assets/img/footer-bg.jpg" alt=""></section>
+    </footer>
+    <!--here ends the Main Footer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <script src="assets/js/scripts-min.js"></script>
+  </body>
+</html>

@@ -9,8 +9,15 @@ div(class="main-con")
 					br 
 					div(class="text-cont")
 						include:markdown-it(html) ../md/caballos.md
-			div(class="table-horse ed-grid")
-				h3 List of Horse Tracks:
+			div(class='ed-container')
+div(class='ed-item')
+	div(class='tabs-container ed-grid')
+		ul(class='tabs-container__tabs' id='tabs')
+			li(class='tabs-container__tab' id="tableOne") Pistas Principales
+			li(class='tabs-container__tab' id="tableTwo") MINOR TRACKS
+			li(class='tabs-container__tab' id="tableThree") OTHER TRACKS
+			li(class='tabs-container__tab' id="tableFour") Galgos
+			li(class='tabs-container__tab' id="tableFive") Internacional
+		div(class='tabs-container__panels')
+			div(class='tabs-container__panel is-active')
 				include ../config/utilis/table-horses
-
-

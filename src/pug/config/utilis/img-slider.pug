@@ -1,9 +1,9 @@
-mixin pushImg(alt, img)
-	div: div(class='tns-single__content'): img(src=img, alt=alt)
+mixin pushImg(alt, img, url)
+	a(href=url): div: div(class='tns-single__content'): img(src=img, alt=alt)
 
 -for(var i =0; i< img_slider.length; i++)
 	-var imgslider = img_slider[i];
-	+pushImg(imgslider.alt, imgslider.img)
+	+pushImg(imgslider.alt, imgslider.img, imgslider.url)
 
 
 

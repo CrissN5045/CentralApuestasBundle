@@ -52,34 +52,36 @@
   <div class="modal-container">
     <div class="modal-left">
 	  <img src="assets/img/logo.png" alt="">
-      <h1 class="modal-title">Welcome!</h1>
-      <p class="modal-desc">Fanny pack hexagon food truck, street art waistcoat kitsch.</p>
+      <h1 class="modal-title">INGRESO DE USUARIO!</h1>
+      <p class="modal-desc">Llena tus datos, confirma tu cuenta EMPIEZA Y GANA.</p>
 
 	<form name="LoginForm" action="javascript:void(0)" onsubmit="BackEndLogin(this); return false">
 
       <div class="input-block form-group">
         <label for="username" class="input-label">Usuario</label>
-        <input type="text" class="form-control" name="username" required placeholder="User">
+        <input type="text" class="form-control" name="username" required placeholder="Usuario">
       </div>
 
       <div class="input-block form-group">
         <label for="password" class="input-label">Contraseña</label>
-        <input type="password" class="form-control" name="password" placeholder="Password" required >
+        <input type="password" class="form-control" name="password" placeholder="Contraseña" required >
       </div>
 
 	  <div class="text-center mt-2">
         <small name="msj_error_lg" class="text-danger"></small>
-    	</div>
-
+      </div>
       <div class="modal-buttons form-group">
-        <a href="" class="">Forgot your password?</a>
-        <button type="submit" name="btn-login" class="input-button">Login</button>
-		<span name="msj_loading" id="id-login-loading"></span>
+        <a href="/recuperar-contra.html" class="">No recuerda tu contraseña?</a>
+        <button type="submit" name="btn-login" class="input-button">
+			<span name="msj_loading" id="id-login-loading"></span>
+			<span name="msj_login">Ingresar</span>
+		</button>
+	
       </div> 
-    <input type="hidden" name="BackEndUrl" value="https://apuestas.centraldeapuesta.com">
+    <input type="hidden" name="BackEndUrl" value="https://centraldeapuesta.com">
 
 	</form>
-      <p class="sign-up">Don't have an account? <a href="#">Sign up now</a></p>
+      <p class="sign-up">Aún no tienes una cuenta? <a href="/register.html">Registrate Ahora !</a></p>
     </div>
     <div class="modal-right">
       <img src="assets/img/ufc-ri-modal.png" alt="">
@@ -97,7 +99,7 @@
       <nav class="top-nav">
         <div class="top-nav__container"><a class="top-nav__link" href="/"><img class="top-nav__logo" src="assets/img/logo.png" alt="logo"></a>
           <ul class="top-nav__menu">
-                        <li class="top-nav__li"><a class="top-nav__anchor" href="lineas de apuesta">LINEAS DE APUESTA</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="lista_apuestas.html">LINEAS DE APUESTA</a></li>
                         <li class="top-nav__li"><a class="top-nav__anchor" href="casino.html">CASINO</a></li>
                         <li class="top-nav__li"><a class="top-nav__anchor" href="caballos.html">CABALLOS</a></li>
                         <li class="top-nav__li"><a class="top-nav__anchor" href="banca.html">BANCA</a></li>
@@ -123,294 +125,8 @@
     <main class="main-container">
       <div class="container-register">
         <h1>Registro</h1>
-        <hr style="width: 50% ">
-        <div class="clearfix ">
-          <form> 
-            <div class="ed-grid m-grid-2 s-grid-1 container-ed">
-              <div class="input_field"><span><i class="fa fa-user">
-                    <input type="name" name="name" placeholder="Nombre" required></i></span></div>
-              <div class="input_field"><span><i class="fa fa-user">
-                    <input type="apellido" name="apellido" placeholder="Primer Apellido" required></i></span></div>
-              <div class="input_field"><span><i class="fa fa-envelope">
-                    <input type="email" name="email" placeholder="Correo Electronico" required></i></span></div>
-              <div class="input_field"><span><i class="fa fa-envelope">
-                    <input type="email" name="email" placeholder="Confirmar Correo" required></i></span></div>
-              <div class="input_field"><span><i class="fa fa-unlock-alt">
-                    <input type="passworld" name="passworld" placeholder="Passworld" required></i></span></div>
-              <div class="input_field"><span><i class="fa fa-unlock-alt">
-                    <input type="passworld" name="passworld" placeholder="Confirmar Passworld" required></i></span></div><br>
-              <hr>
-            </div>
-            <div class="ed-grid m-grid-2 s-grid-1 container-ed">
-              <div class="input_field"><span><i class="fa fa-phone-square">
-                    <input type="text" name="number" placeholder="Numero de telefono" id="telf" disabled="disabled" required></i></span></div>
-              <div class="input_field select_option m-cols-2 m-x-2 s-cols-2"><span><i class="fa fa-id-card-o">
-                                        <select id="pais">
-                                                              <option value="" maxlength="10">Seleccione un pais </option>
-                                                              <option value="+93" maxlength="10">Afganistán +93</option>
-                                                              <option value="+358" maxlength="10">Åland +358</option>
-                                                              <option value="+355" maxlength="10">Albania +355</option>
-                                                              <option value="+213" maxlength="10">Argelia +213</option>
-                                                              <option value="+1684" maxlength="10">Samoa Americana +1684</option>
-                                                              <option value="+376" maxlength="10">Andorra +376</option>
-                                                              <option value="+244" maxlength="10">Angola +244</option>
-                                                              <option value="+1264" maxlength="10">Anguilla +1264</option>
-                                                              <option value="+672" maxlength="10">Antártida +672</option>
-                                                              <option value="+1268" maxlength="10">Antigua y Barbuda +1268</option>
-                                                              <option value="+54" maxlength="10">Argentina +54</option>
-                                                              <option value="+374" maxlength="10">Armenia +374</option>
-                                                              <option value="+297" maxlength="10">Aruba +297</option>
-                                                              <option value="+247" maxlength="10">Ascensión Island +247</option>
-                                                              <option value="+61" maxlength="10">Australia +61</option>
-                                                              <option value="+43" maxlength="10">Austria +43</option>
-                                                              <option value="+994" maxlength="10">Azerbaiyán +994</option>
-                                                              <option value="+1242" maxlength="10">Bahamas +1242</option>
-                                                              <option value="+973" maxlength="10">Baréin +973</option>
-                                                              <option value="+880" maxlength="10">Bangladés +880</option>
-                                                              <option value="+1246" maxlength="10">Barbados +1246</option>
-                                                              <option value="+375" maxlength="10">Bielorrusia +375</option>
-                                                              <option value="+32" maxlength="10">Bélgica +32</option>
-                                                              <option value="+501" maxlength="10">Belice +501</option>
-                                                              <option value="+229" maxlength="10">Benin +229</option>
-                                                              <option value="+1441" maxlength="10">Bermudas +1441</option>
-                                                              <option value="+975" maxlength="10">Bután +975</option>
-                                                              <option value="+591" maxlength="10">Bolivia +591</option>
-                                                              <option value="+599" maxlength="10">Bonaire +599</option>
-                                                              <option value="+387" maxlength="10">Bosnia y Herzegovina +387</option>
-                                                              <option value="+267" maxlength="10">Botsuana +267</option>
-                                                              <option value="+55" maxlength="10">Brasil +55</option>
-                                                              <option value="+246" maxlength="10">Territorio Británico del Océano Índico +246</option>
-                                                              <option value="+673" maxlength="10">Brunéi +673</option>
-                                                              <option value="+359" maxlength="10">Bulgaria +359</option>
-                                                              <option value="+226" maxlength="10">Burkina Faso +226</option>
-                                                              <option value="+257" maxlength="10">Burundi +257</option>
-                                                              <option value="+855" maxlength="10">Camboya +855</option>
-                                                              <option value="+237" maxlength="10">Camerún +237</option>
-                                                              <option value="+1" maxlength="10">Canadá +1</option>
-                                                              <option value="+238" maxlength="10">Cabo Verde +238</option>
-                                                              <option value="+1345" maxlength="10">Islas Caimán +1345</option>
-                                                              <option value="+236" maxlength="10">República Centroafricana +236</option>
-                                                              <option value="+235" maxlength="10">Chad +235</option>
-                                                              <option value="+56" maxlength="10">Chile +56</option>
-                                                              <option value="+86" maxlength="10">China +86</option>
-                                                              <option value="+61" maxlength="10">Isla de Navidad +61</option>
-                                                              <option value="+61" maxlength="10">Islas Cocos +61</option>
-                                                              <option value="+57" maxlength="10">Colombia +57</option>
-                                                              <option value="+269" maxlength="10">Comoras +269</option>
-                                                              <option value="+242" maxlength="10">Congo +242</option>
-                                                              <option value="+682" maxlength="10">Islas Cook +682</option>
-                                                              <option value="+506" maxlength="10">Costa Rica +506</option>
-                                                              <option value="+385" maxlength="10">Croacia +385</option>
-                                                              <option value="+53" maxlength="10">Cuba +53</option>
-                                                              <option value="+599" maxlength="10">Curazao +599</option>
-                                                              <option value="+357" maxlength="10">Chipre +357</option>
-                                                              <option value="+420" maxlength="10">Chequia +420</option>
-                                                              <option value="+225" maxlength="10">Costa de Marfil +225</option>
-                                                              <option value="+45" maxlength="10">Dinamarca +45</option>
-                                                              <option value="+253" maxlength="10">Yibuti +253</option>
-                                                              <option value="+1767" maxlength="10">Dominica +1767</option>
-                                                              <option value="+1849" maxlength="10">República Dominicana +1849</option>
-                                                              <option value="+593" maxlength="10">Ecuador +593</option>
-                                                              <option value="+20" maxlength="10">Egipto +20</option>
-                                                              <option value="+503" maxlength="10">El Salvador +503</option>
-                                                              <option value="+240" maxlength="10">Guinea Ecuatorial +240</option>
-                                                              <option value="+291" maxlength="10">Eritrea +291</option>
-                                                              <option value="+372" maxlength="10">Estonia +372</option>
-                                                              <option value="+268" maxlength="10">Suazilandia +268</option>
-                                                              <option value="+251" maxlength="10">Etiopía +251</option>
-                                                              <option value="+500" maxlength="10">Islas Malvinas +500</option>
-                                                              <option value="+298" maxlength="10">Islas Feroe +298</option>
-                                                              <option value="+679" maxlength="10">Fiyi +679</option>
-                                                              <option value="+358" maxlength="10">Finlandia +358</option>
-                                                              <option value="+33" maxlength="10">Francia +33</option>
-                                                              <option value="+594" maxlength="10">Guayana Francesa +594</option>
-                                                              <option value="+689" maxlength="10">Polinesia Francesa +689</option>
-                                                              <option value="+262" maxlength="10">Territorios Australes Franceses +262</option>
-                                                              <option value="+241" maxlength="10">Gabón +241</option>
-                                                              <option value="+220" maxlength="10">Gambia +220</option>
-                                                              <option value="+995" maxlength="10">Georgia +995</option>
-                                                              <option value="+49" maxlength="10">Alemania +49</option>
-                                                              <option value="+233" maxlength="10">Ghana +233</option>
-                                                              <option value="+350" maxlength="10">Gibraltar +350</option>
-                                                              <option value="+30" maxlength="10">Grecia +30</option>
-                                                              <option value="+299" maxlength="10">Groenlandia +299</option>
-                                                              <option value="+1473" maxlength="10">Granada +1473</option>
-                                                              <option value="+590" maxlength="10">Guadalupe +590</option>
-                                                              <option value="+1671" maxlength="10">Guam +1671</option>
-                                                              <option value="+502" maxlength="10">Guatemala +502</option>
-                                                              <option value="+44" maxlength="10">Guernsey +44</option>
-                                                              <option value="+224" maxlength="10">Guinea +224</option>
-                                                              <option value="+245" maxlength="10">Guinea-Bissau +245</option>
-                                                              <option value="+592" maxlength="10">Guyana +592</option>
-                                                              <option value="+509" maxlength="10">Haití +509</option>
-                                                              <option value="+672" maxlength="10">Islas Heard y McDonald +672</option>
-                                                              <option value="+504" maxlength="10">Honduras +504</option>
-                                                              <option value="+852" maxlength="10">Hong Kong +852</option>
-                                                              <option value="+36" maxlength="10">Hungría +36</option>
-                                                              <option value="+354" maxlength="10">Islandia +354</option>
-                                                              <option value="+91" maxlength="10">India +91</option>
-                                                              <option value="+62" maxlength="10">Indonesia +62</option>
-                                                              <option value="+98" maxlength="10">Irán, República Islámica del Golfo Pérsico +98</option>
-                                                              <option value="+964" maxlength="10">Irak +964</option>
-                                                              <option value="+353" maxlength="10">Irlanda +353</option>
-                                                              <option value="+44" maxlength="10">Isla de Man +44</option>
-                                                              <option value="+972" maxlength="10">Israel +972</option>
-                                                              <option value="+39" maxlength="10">Italia +39</option>
-                                                              <option value="+1 876" maxlength="10">Jamaica +1 876</option>
-                                                              <option value="+81" maxlength="10">Japón +81</option>
-                                                              <option value="+44" maxlength="10">Jersey +44</option>
-                                                              <option value="+962" maxlength="10">Jordania +962</option>
-                                                              <option value="+7 7" maxlength="10">Kazajistán +7 7</option>
-                                                              <option value="+254" maxlength="10">Kenia +254</option>
-                                                              <option value="+686" maxlength="10">Kiribati +686</option>
-                                                              <option value="+383" maxlength="10">Kosovo +383</option>
-                                                              <option value="+965" maxlength="10">Kuwait +965</option>
-                                                              <option value="+996" maxlength="10">Kirguistán +996</option>
-                                                              <option value="+856" maxlength="10">Laos +856</option>
-                                                              <option value="+371" maxlength="10">Letonia +371</option>
-                                                              <option value="+961" maxlength="10">Líbano +961</option>
-                                                              <option value="+266" maxlength="10">Lesoto +266</option>
-                                                              <option value="+231" maxlength="10">Liberia +231</option>
-                                                              <option value="+218" maxlength="10">Libia +218</option>
-                                                              <option value="+423" maxlength="10">Liechtenstein +423</option>
-                                                              <option value="+370" maxlength="10">Lituania +370</option>
-                                                              <option value="+352" maxlength="10">Luxemburgo +352</option>
-                                                              <option value="+853" maxlength="10">Macao +853</option>
-                                                              <option value="+389" maxlength="10">Macedonia +389</option>
-                                                              <option value="+261" maxlength="10">Madagascar +261</option>
-                                                              <option value="+265" maxlength="10">Malawi +265</option>
-                                                              <option value="+60" maxlength="10">Malasia +60</option>
-                                                              <option value="+960" maxlength="10">Maldivas +960</option>
-                                                              <option value="+223" maxlength="10">Mali +223</option>
-                                                              <option value="+356" maxlength="10">Malta +356</option>
-                                                              <option value="+692" maxlength="10">Islas Marshall +692</option>
-                                                              <option value="+596" maxlength="10">Martinica +596</option>
-                                                              <option value="+222" maxlength="10">Mauritania +222</option>
-                                                              <option value="+230" maxlength="10">Mauricio +230</option>
-                                                              <option value="+262" maxlength="10">Mayotte +262</option>
-                                                              <option value="+52" maxlength="10">México +52</option>
-                                                              <option value="+691" maxlength="10">Micronesia +691</option>
-                                                              <option value="+373" maxlength="10">Moldavia +373</option>
-                                                              <option value="+377" maxlength="10">Mónaco +377</option>
-                                                              <option value="+976" maxlength="10">Mongolia +976</option>
-                                                              <option value="+382" maxlength="10">Montenegro +382</option>
-                                                              <option value="+1664" maxlength="10">Montserrat +1664</option>
-                                                              <option value="+212" maxlength="10">Marruecos +212</option>
-                                                              <option value="+258" maxlength="10">Mozambique +258</option>
-                                                              <option value="+95" maxlength="10">Myanmar +95</option>
-                                                              <option value="+264" maxlength="10">Namibia +264</option>
-                                                              <option value="+674" maxlength="10">Nauru +674</option>
-                                                              <option value="+977" maxlength="10">Nepal +977</option>
-                                                              <option value="+31" maxlength="10">Países Bajos +31</option>
-                                                              <option value="+687" maxlength="10">Nueva Caledonia +687</option>
-                                                              <option value="+64" maxlength="10">Nueva Zelanda +64</option>
-                                                              <option value="+505" maxlength="10">Nicaragua +505</option>
-                                                              <option value="+227" maxlength="10">Níger +227</option>
-                                                              <option value="+234" maxlength="10">Nigeria +234</option>
-                                                              <option value="+683" maxlength="10">Niue +683</option>
-                                                              <option value="+672" maxlength="10">Isla Norfolk +672</option>
-                                                              <option value="+850" maxlength="10">Corea del Norte +850</option>
-                                                              <option value="+1670" maxlength="10">Islas Marianas del Norte +1670</option>
-                                                              <option value="+47" maxlength="10">Noruega +47</option>
-                                                              <option value="+968" maxlength="10">Omán +968</option>
-                                                              <option value="+92" maxlength="10">Pakistán +92</option>
-                                                              <option value="+680" maxlength="10">Palaos +680</option>
-                                                              <option value="+970" maxlength="10">Palestina +970</option>
-                                                              <option value="+507" maxlength="10">Panamá +507</option>
-                                                              <option value="+675" maxlength="10">Papúa Nueva Guinea +675</option>
-                                                              <option value="+595" maxlength="10">Paraguay +595</option>
-                                                              <option value="+51" maxlength="10">Perú +51</option>
-                                                              <option value="+63" maxlength="10">Filipinas +63</option>
-                                                              <option value="+64" maxlength="10">Islas Pitcairn +64</option>
-                                                              <option value="+48" maxlength="10">Polonia +48</option>
-                                                              <option value="+351" maxlength="10">Portugal +351</option>
-                                                              <option value="+1939" maxlength="10">Puerto Rico +1939</option>
-                                                              <option value="+974" maxlength="10">Catar +974</option>
-                                                              <option value="+40" maxlength="10">Rumania +40</option>
-                                                              <option value="+7" maxlength="10">Rusia +7</option>
-                                                              <option value="+250" maxlength="10">Ruanda +250</option>
-                                                              <option value="+262" maxlength="10">Reunión +262</option>
-                                                              <option value="+599" maxlength="10">Saba +599</option>
-                                                              <option value="+590" maxlength="10">San Bartolomé +590</option>
-                                                              <option value="+290" maxlength="10">Santa Elena +290</option>
-                                                              <option value="+1869" maxlength="10">San Cristóbal y Nieves +1869</option>
-                                                              <option value="+1758" maxlength="10">Santa Lucía +1758</option>
-                                                              <option value="+590" maxlength="10">San Martín +590</option>
-                                                              <option value="+508" maxlength="10">San Pedro y Miquelón +508</option>
-                                                              <option value="+1784" maxlength="10">San Vicente y las Granadinas +1784</option>
-                                                              <option value="+685" maxlength="10">Samoa +685</option>
-                                                              <option value="+378" maxlength="10">San Marino +378</option>
-                                                              <option value="+239" maxlength="10">Santo Tomé y Príncipe +239</option>
-                                                              <option value="+966" maxlength="10">Arabia Saudita +966</option>
-                                                              <option value="+221" maxlength="10">Senegal +221</option>
-                                                              <option value="+381" maxlength="10">Serbia +381</option>
-                                                              <option value="+248" maxlength="10">Seychelles +248</option>
-                                                              <option value="+232" maxlength="10">Sierra Leona +232</option>
-                                                              <option value="+65" maxlength="10">Singapur +65</option>
-                                                              <option value="+599" maxlength="10">San Eustaquio +599</option>
-                                                              <option value="+1721" maxlength="10">Sint Maarten +1721</option>
-                                                              <option value="+421" maxlength="10">Eslovaquia +421</option>
-                                                              <option value="+386" maxlength="10">Eslovenia +386</option>
-                                                              <option value="+677" maxlength="10">Islas Salomón +677</option>
-                                                              <option value="+252" maxlength="10">Somalia +252</option>
-                                                              <option value="+27" maxlength="10">Sudáfrica +27</option>
-                                                              <option value="+500" maxlength="10">Islas Georgias del Sur y Sandwich del Sur +500</option>
-                                                              <option value="+82" maxlength="10">Corea del Sur +82</option>
-                                                              <option value="+211" maxlength="10">Sudán del Sur +211</option>
-                                                              <option value="+34" maxlength="10">España +34</option>
-                                                              <option value="+94" maxlength="10">Sri Lanka +94</option>
-                                                              <option value="+249" maxlength="10">Sudán +249</option>
-                                                              <option value="+597" maxlength="10">Surinam +597</option>
-                                                              <option value="+47" maxlength="10">Svalbard y Jan Mayen +47</option>
-                                                              <option value="+46" maxlength="10">Suecia +46</option>
-                                                              <option value="+41" maxlength="10">Suiza +41</option>
-                                                              <option value="+963" maxlength="10">Siria +963</option>
-                                                              <option value="+886" maxlength="10">Taiwán +886</option>
-                                                              <option value="+992" maxlength="10">Tayikistán +992</option>
-                                                              <option value="+255" maxlength="10">Tanzania +255</option>
-                                                              <option value="+66" maxlength="10">Tailandia +66</option>
-                                                              <option value="+670" maxlength="10">Timor-Leste +670</option>
-                                                              <option value="+228" maxlength="10">Togo +228</option>
-                                                              <option value="+690" maxlength="10">Tokelau +690</option>
-                                                              <option value="+676" maxlength="10">Tonga +676</option>
-                                                              <option value="+1868" maxlength="10">Trinidad y Tobago +1868</option>
-                                                              <option value="+290" maxlength="10">Tristán de Acuña +290</option>
-                                                              <option value="+216" maxlength="10">Túnez +216</option>
-                                                              <option value="+993" maxlength="10">Turkmenistán +993</option>
-                                                              <option value="+1649" maxlength="10">Islas Turcas y Caicos +1649</option>
-                                                              <option value="+688" maxlength="10">Tuvalu +688</option>
-                                                              <option value="+90" maxlength="10">Turquía +90</option>
-                                                              <option value="+256" maxlength="10">Uganda +256</option>
-                                                              <option value="+380" maxlength="10">Ucrania +380</option>
-                                                              <option value="+971" maxlength="10">Emiratos Árabes Unidos +971</option>
-                                                              <option value="+44" maxlength="10">Reino Unido +44</option>
-                                                              <option value="+1" maxlength="10">Estados Unidos +1</option>
-                                                              <option value="+598" maxlength="10">Uruguay +598</option>
-                                                              <option value="+998" maxlength="10">Uzbekistán +998</option>
-                                                              <option value="+678" maxlength="10">Vanuatu +678</option>
-                                                              <option value="+379" maxlength="10">Ciudad del Vaticano +379</option>
-                                                              <option value="+58" maxlength="10">Venezuela +58</option>
-                                                              <option value="+84" maxlength="10">Vietnam +84</option>
-                                                              <option value="+1284" maxlength="10">Islas Vírgenes Británicas +1284</option>
-                                                              <option value="+1340" maxlength="10">Islas Vírgenes de los Estados Unidos +1340</option>
-                                                              <option value="+681" maxlength="10">Wallis y Futuna +681</option>
-                                                              <option value="+212" maxlength="10">Sahara Occidental +212</option>
-                                                              <option value="+967" maxlength="10">Yemen +967</option>
-                                                              <option value="+260" maxlength="10">Zambia +260</option>
-                                                              <option value="+263" maxlength="10">Zimbabue +263</option>
-                                        </select></i></span></div>
-              <div class="input_field select_option m-cols-1 m-x-1 s-cols-2"><span><i class="fa fa-usd">
-                                        <select>
-                                                              <option value="">CLP</option>
-                                                              <option value="">ARS</option>
-                                                              <option value="">USD</option>
-                                        </select></i></span></div>
-              <div class="input_field select_option m-cols-2 m-x-2 s-cols-2"><span><i class="fa fa-id-card-o">
-                    <select>
-                      <option>Seleccione Estado</option>
-                    </select></i></span></div>
-            </div>
-          </form><a href="#" class="button">Registrarse</a>		
+        <div class="ed-container form-register">
+          <iframe style="width: 100%; height: 58vh;" src="https://centraldeapuesta.com/registro" frameborder="0">	</iframe>
         </div>
       </div>
     </main>
@@ -419,21 +135,21 @@
     <footer class="main-footer">
       <div class="footer-alig ed-grid m-grid-4 lg-grid-4 row-gap">
                 <ul class="ul-footer">
-                          <li><a href="url">Apuestas en Línea</a></li>
-                          <li><a href="url">Apuestas Caballos</a></li>
-                          <li><a href="url">Casino en Línea</a></li>
-                          <li><a href="url">Opciones del Deposito</a></li>
+                          <li><a href="lista_apuestas.html">Apuestas en Línea</a></li>
+                          <li><a href="caballos.html">Apuestas Caballos</a></li>
+                          <li><a href="casino.html">Casino en Línea</a></li>
+                          <li><a href="banca.html">Opciones del Deposito</a></li>
                 </ul>
                 <ul class="ul-footer">
-                          <li><a href="url">Reglas Deportes</a></li>
-                          <li><a href="url">Líneas de Apuesta</a></li>
-                          <li><a href="url">REGISTRARME!</a></li>
+                          <li><a href="reglas-deportes.html">Reglas Deportes</a></li>
+                          <li><a href="lista_apuestas.html">Líneas de Apuesta</a></li>
+                          <li><a href="register.html">REGISTRARME!</a></li>
                 </ul>
                 <ul class="ul-footer">
-                          <li><a href="url">Reglas de Caballos</a></li>
-                          <li><a href="url">Juego Responsable</a></li>
-                          <li><a href="url">Política de Privacidad</a></li>
-                          <li><a href="url">Reglas Apuestas en vivo</a></li>
+                          <li><a href="reglas-caballos.html">Reglas de Caballos</a></li>
+                          <li><a href="juego-responsable.html">Juego Responsable</a></li>
+                          <li><a href="privacidad.html">Política de Privacidad</a></li>
+                          <li><a href="reglas-apuestas-envivo.html">Reglas Apuestas en vivo</a></li>
                 </ul>
         <ul class="footer-imgs">
           <div><img src="assets/img/logo-mobile.png" alt=""><img src="assets/img/usa18.png" alt=""></div>

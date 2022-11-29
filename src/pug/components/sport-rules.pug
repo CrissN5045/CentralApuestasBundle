@@ -1,0 +1,15 @@
+mixin bets(td1, td2)
+	tr(class="sport-rules__table--tr") 
+		td(class="sport-rules__table--td1")= td1
+		td(class="sport-rules__table--td2")= td2
+
+div(class='sport-rules-container')
+	h3(class='') La siguiente tabla le indica cuando un juego se considera oficial para efectos de apuestas:
+	table(class='sport-rules__table')
+		colgroup(class='sport-rules--colgroup')
+			col(class='sport-rules__table--col1')
+			col(class='sport-rules__table--col2')
+		tbody(class="sport-rules__table--tbody")
+			-for(var i = 0; i < bets.length ; i++)
+				-var bet = bets[i]
+				+bets(bet.td1, bet.td2)

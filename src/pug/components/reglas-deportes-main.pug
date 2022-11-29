@@ -1,0 +1,75 @@
+div(class="main-con")
+	div(class="bg-reglas-deportes")
+		img(src="/assets/img/slider-sportsrules.jpg", alt="")
+	div(class="main-cont ed-grid container-reglas")
+		h1(class="titles") Reglas de Deportes
+		div(class='ed-grid')
+			include:markdown-it(html) ../md/rules-sport/sport-rules.md
+			include ../components/sport-rules
+			div(class='accordion v1')
+				div(class="a-container")
+					p(class="a-btn") Futbol Americano <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/futbol-americano.md
+						div(class='accordion v1')
+				div(class="a-container")
+					p(class="a-btn") Basketball <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/basketball.md
+						div(class='accordion v1')
+				div(class="a-container")
+					p(class="a-btn") Baseball <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/baseball.md
+				div(class="a-container")
+					p(class="a-btn") Hockey <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/hockey.md
+				div(class="a-container")
+					p(class="a-btn") Fútbol Soccer <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/soccer.md
+				div(class="a-container")
+					p(class="a-btn") Golf <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/golf.md
+				div(class="a-container")
+					p(class="a-btn") Boxeo - Mixed Martial Arts (MMA) - UFC <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/boxeo.md
+				div(class="a-container")
+					p(class="a-btn") Tennis <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/tennis.md
+				div(class="a-container")
+					p(class="a-btn") Autoracing <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/autoracing.md
+				div(class="a-container")
+					p(class="a-btn") Reglas Generales de Props <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/prop-rules.md
+				div(class="a-container")
+					p(class="a-btn") Apuestas Live In-Game Lines <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/live-games.md
+				div(class="a-container")
+					p(class="a-btn") Tarjetas Parlay <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/parlay-cards.md
+				div(class="a-container")
+					p(class="a-btn") WATER POLO <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/water-polo.md
+				div(class="a-container")
+					p(class="a-btn") RUGBY <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/rugby.md
+				div(class="a-container")
+					p(class="a-btn") CRICKET <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/cricket.md
+				div(class="a-container")
+					p(class="a-btn") OLYMPIC RULES <span></span>
+					div(class='a-panel')
+						include:markdown-it(html) ../md/rules-sport/olympic-rules.md

@@ -58,6 +58,28 @@
 		}
 	}
 
+	.bg-reglas-deportes{
+		
+		margin-top: 25rem;
+		>img{
+				z-index: -1;
+				width: 100%;
+				height: 700px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				object-fit: cover;
+
+				@include from(m){
+					height: 850px;
+				}
+				@include from(s){
+					height: 550px;
+				}
+		}
+		
+	}
+
 	
 	
 .main-cont{

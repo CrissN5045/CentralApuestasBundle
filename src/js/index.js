@@ -4,6 +4,8 @@ import {topNav} from './modules/topNav';
 import {tnsSingle} from './modules/tns-slider';
 import {searchFilter} from './modules/searchFilter';
 import {swDetecter} from './modules/swDetecter';
+import {tabs} from './modules/tabs';
+import {initAcc} from './modules/dropdown';
 //import {mdInner} from './modules/mdInner';
 
 
@@ -19,6 +21,13 @@ import {swDetecter} from './modules/swDetecter';
 		// functions here
 		searchFilter();
 	}
+	else if(document.body.classList.contains('caballos')){
+		tabs();
+	}
+	else if(document.body.classList.contains('reglas-deportes')){
+		initAcc();
+	}
+
 })();
 
 

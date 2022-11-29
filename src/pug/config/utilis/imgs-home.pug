@@ -4,11 +4,12 @@ mixin pushImgsHome()
 			-for(var i = 0; i < imgs_home.length; i++)
 				-var img= imgs_home[i].img 
 				-var text_title= imgs_home[i].title 
-				-var text_class= imgs_home[i].class 
-				+pushImg(img, text_class, text_title)
+				-var text_class= imgs_home[i].class
+				-var img_url= imgs_home[i].url 
+				+pushImg(img, text_class, text_title,img_url)
 
-mixin pushImg(img, text_class, text_title)
-	div(class=text_class, class="container-main-img")
+mixin pushImg(img, text_class, text_title,img_url)
+	div(class=text_class, class="container-main-img"): a(href=img_url)
 		img(class="images-main" src=img, alt=text_title)
 		div(class="container-btn")
 			button(class="btn") APUESTA AHORA

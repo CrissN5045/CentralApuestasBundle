@@ -1,0 +1,2 @@
+- En el caso de un evento o juego suspendido o cancelado, la Tarjeta Parlay continuara en juego y el evento en cuestión será retirado de la Tarjeta (Ejemplo: una Tarjeta Parlay de 5 equipos se convertirá en una Tarjeta Parlay de 4 equipos). 
+- En el caso de una Tarjeta Parlay de 3 equipos, si un juego es suspendido o cancelado entonces la Tarjeta Parlay no tendrá acción y los fondos serán devueltos al cliente

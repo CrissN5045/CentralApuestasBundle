@@ -44,42 +44,44 @@
     <script src="https://kit.fontawesome.com/20f3c29ee8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Contact | Central Apuestas</title>
+    <title>Casino | Central Apuestas</title>
   </head>
-  <body class="contact" itemscope itemtype="http://schema.org/WebPage">
+  <body class="casino" itemscope itemtype="http://schema.org/WebPage">
     <!--here start the Main Header-->
     <header class="main-header"><div class="modal">
   <div class="modal-container">
     <div class="modal-left">
 	  <img src="assets/img/logo.png" alt="">
-      <h1 class="modal-title">Welcome!</h1>
-      <p class="modal-desc">Fanny pack hexagon food truck, street art waistcoat kitsch.</p>
+      <h1 class="modal-title">INGRESO DE USUARIO!</h1>
+      <p class="modal-desc">Llena tus datos, confirma tu cuenta EMPIEZA Y GANA.</p>
 
 	<form name="LoginForm" action="javascript:void(0)" onsubmit="BackEndLogin(this); return false">
 
       <div class="input-block form-group">
         <label for="username" class="input-label">Usuario</label>
-        <input type="text" class="form-control" name="username" required placeholder="User">
+        <input type="text" class="form-control" name="username" required placeholder="Usuario">
       </div>
 
       <div class="input-block form-group">
         <label for="password" class="input-label">Contraseña</label>
-        <input type="password" class="form-control" name="password" placeholder="Password" required >
+        <input type="password" class="form-control" name="password" placeholder="Contraseña" required >
       </div>
 
 	  <div class="text-center mt-2">
         <small name="msj_error_lg" class="text-danger"></small>
-    	</div>
-
+      </div>
       <div class="modal-buttons form-group">
-        <a href="" class="">Forgot your password?</a>
-        <button type="submit" name="btn-login" class="input-button">Login</button>
-		<span name="msj_loading" id="id-login-loading"></span>
+        <a href="/recuperar-contra.html" class="">No recuerda tu contraseña?</a>
+        <button type="submit" name="btn-login" class="input-button">
+			<span name="msj_loading" id="id-login-loading"></span>
+			<span name="msj_login">Ingresar</span>
+		</button>
+	
       </div> 
-    <input type="hidden" name="BackEndUrl" value="https://apuestas.centraldeapuesta.com">
+    <input type="hidden" name="BackEndUrl" value="https://centraldeapuesta.com">
 
 	</form>
-      <p class="sign-up">Don't have an account? <a href="#">Sign up now</a></p>
+      <p class="sign-up">Aún no tienes una cuenta? <a href="/register.html">Registrate Ahora !</a></p>
     </div>
     <div class="modal-right">
       <img src="assets/img/ufc-ri-modal.png" alt="">
@@ -97,7 +99,7 @@
       <nav class="top-nav">
         <div class="top-nav__container"><a class="top-nav__link" href="/"><img class="top-nav__logo" src="assets/img/logo.png" alt="logo"></a>
           <ul class="top-nav__menu">
-                        <li class="top-nav__li"><a class="top-nav__anchor" href="lineas de apuesta">LINEAS DE APUESTA</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="lista_apuestas.html">LINEAS DE APUESTA</a></li>
                         <li class="top-nav__li"><a class="top-nav__anchor" href="casino.html">CASINO</a></li>
                         <li class="top-nav__li"><a class="top-nav__anchor" href="caballos.html">CABALLOS</a></li>
                         <li class="top-nav__li"><a class="top-nav__anchor" href="banca.html">BANCA</a></li>
@@ -141,225 +143,225 @@
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>FruitZen</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/FruitZen.jpg" alt="FruitZen">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>AmericanBlackjack</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/AmericanBlackjack.jpg" alt="AmericanBlackjack">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>JumboJoker</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/JumboJoker.jpg" alt="JumboJoker">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>EuropeanRoulette</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/EuropeanRoulette.jpg" alt="EuropeanRoulette">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>SugarPop2</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/SugarPop2.jpg" alt="SugarPop2">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>BloodEternal</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/BloodEternal.jpg" alt="BloodEternal">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>Lucky7</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/Lucky7.jpg" alt="Lucky7">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>CaribbeanPoker</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/CaribbeanPoker.jpg" alt="CaribbeanPoker">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>DeucesWild</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/DeucesWild.jpg" alt="DeucesWild">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>FireandSteel</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/FireandSteel.jpg" alt="FireandSteel">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>AmericanBJ</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/AmericanBJ.jpg" alt="AmericanBJ">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>ArabianWishes</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/ArabianWishes.jpg" alt="ArabianWishes">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>FreakyF</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/FreakyF.jpg" alt="FreakyF">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>12Animals</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/12Animals.jpg" alt="12Animals">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>CaribbeanPokerB</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/CaribbeanPokerB.jpg" alt="CaribbeanPokerB">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>KittyCutie</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/KittyCutie.jpg" alt="KittyCutie">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>SistersLuck</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/SistersLuck.jpg" alt="SistersLuck">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>SingleDeckBJ</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/SingleDeckBJ.jpg" alt="SingleDeckBJ">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>HyperGalactic</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/HyperGalactic.jpg" alt="HyperGalactic">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>PartyGuy</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/PartyGuy.jpg" alt="PartyGuy">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>MammaMia</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/MammaMia.jpg" alt="MammaMia">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>TreasureRoom</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/TreasureRoom.jpg" alt="TreasureRoom">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>AtTheMovies</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/AtTheMovies.jpg" alt="AtTheMovies">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>MegaGlam</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/MegaGlam.jpg" alt="MegaGlam">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>SinCityNights</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/Sin-City-Nights.jpg" alt="SinCityNights">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>FaFaTwins</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/FaFaTwins.jpg" alt="FaFaTwins">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>FrankenslotsMonster</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/FrankenslotsMonster.jpg" alt="FrankenslotsMonster">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>Pinocchio</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/Pinocchio.jpg" alt="Pinocchio">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>Tycoons</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/Tycoons.jpg" alt="Tycoons">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>EventHorizon</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/EventHorizon.jpg" alt="EventHorizon">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>WeekendInVegas</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/WeekendInVegas.jpg" alt="WeekendInVegas">
                             </div>
                             <div class="card-itemCasino">
                               <div class="buttons-itemCasino">
                                 <h3>TigersClaw</h3>
-                                <button>Jugar Real</button>
-                                <button>Jugar Gratis</button>
+                                <button class="modal-button-casino">Jugar Real</button><a href="/register.html">
+                                  <button class="DisNoneCasinoBtn ">Jugar Gratis</button></a>
                               </div><img class="img-casino" src="assets/img/TigersClaw.jpg" alt="TigersClaw">
                             </div>
             </div>
@@ -372,21 +374,21 @@
     <footer class="main-footer">
       <div class="footer-alig ed-grid m-grid-4 lg-grid-4 row-gap">
                 <ul class="ul-footer">
-                          <li><a href="url">Apuestas en Línea</a></li>
-                          <li><a href="url">Apuestas Caballos</a></li>
-                          <li><a href="url">Casino en Línea</a></li>
-                          <li><a href="url">Opciones del Deposito</a></li>
+                          <li><a href="lista_apuestas.html">Apuestas en Línea</a></li>
+                          <li><a href="caballos.html">Apuestas Caballos</a></li>
+                          <li><a href="casino.html">Casino en Línea</a></li>
+                          <li><a href="banca.html">Opciones del Deposito</a></li>
                 </ul>
                 <ul class="ul-footer">
-                          <li><a href="url">Reglas Deportes</a></li>
-                          <li><a href="url">Líneas de Apuesta</a></li>
-                          <li><a href="url">REGISTRARME!</a></li>
+                          <li><a href="reglas-deportes.html">Reglas Deportes</a></li>
+                          <li><a href="lista_apuestas.html">Líneas de Apuesta</a></li>
+                          <li><a href="register.html">REGISTRARME!</a></li>
                 </ul>
                 <ul class="ul-footer">
-                          <li><a href="url">Reglas de Caballos</a></li>
-                          <li><a href="url">Juego Responsable</a></li>
-                          <li><a href="url">Política de Privacidad</a></li>
-                          <li><a href="url">Reglas Apuestas en vivo</a></li>
+                          <li><a href="reglas-caballos.html">Reglas de Caballos</a></li>
+                          <li><a href="juego-responsable.html">Juego Responsable</a></li>
+                          <li><a href="privacidad.html">Política de Privacidad</a></li>
+                          <li><a href="reglas-apuestas-envivo.html">Reglas Apuestas en vivo</a></li>
                 </ul>
         <ul class="footer-imgs">
           <div><img src="assets/img/logo-mobile.png" alt=""><img src="assets/img/usa18.png" alt=""></div>

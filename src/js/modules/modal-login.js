@@ -1,6 +1,7 @@
 const body = document.querySelector("body");
 const modal = document.querySelector(".modal");
 const modalButton = document.querySelector(".modal-button");
+const modalButtonCasino = document.querySelectorAll(".modal-button-casino");
 const modalButtonM = document.querySelector(".modal-button-m");
 const closeButton = document.querySelector(".close-button");
 const scrollDown = document.querySelector(".scroll-down");
@@ -20,7 +21,11 @@ modalButton.addEventListener("click", openModal);
 closeButton.addEventListener("click", closeModal);
 modalButtonM.addEventListener("click", openModal);
 
-
+if (document.body.classList.contains('casino')) {
+for (let index = 0; index < modalButtonCasino.length; index++) {
+	modalButtonCasino[index].addEventListener("click", openModal);
+}
+}
 
 document.onkeydown = evt => {
   evt = evt || window.event;

@@ -1,0 +1,328 @@
+
+<!--mixins imported from myStylkeGuide-->
+<!--Mixin top menu--><!DOCTYPE html>
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="This website contains a collection of projects developed by Enrique Estrada using a Gulp boilerplate developed by him" content="content">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width = 320, initial-scale = 2.3, user-scalable = no">
+    <meta name="viewport" content="width = device-width, initial-scale = 2.3, user-scalable = no">
+    <meta name="viewport" content="width = device-width, initial-scale = 2.3, minimum-scale = 1, maximum-scale = 5">
+    <meta name="viewport" content="width = 320, initial-scale = 2.3, user-scalable = no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--X-UA-compatible-->
+    <meta http-equiv="X-UA-compatible" content="IE=11">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!--iphone-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!--PWA tags here-->
+    <meta name="theme-color" content="#0096D9">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/icon_1024.png">
+    <link rel="apple-touch-icon" href="./assets/img/icon_1024.png">
+    <link rel="apple-touch-startup-image" href="./assets/img/icon_1024.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="author" type="text/plain" href="./humans.txt">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml">
+    <script src="https://kit.fontawesome.com/20f3c29ee8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Reglas-deportes | reglas-deportes</title>
+  </head>
+  <body class="reglas-deportes" itemscope itemtype="http://schema.org/WebPage">
+    <!--here start the Main Header-->
+    <header class="main-header"><div class="modal">
+  <div class="modal-container">
+    <div class="modal-left">
+	  <img src="assets/img/logo.png" alt="">
+      <h1 class="modal-title">INGRESO DE USUARIO!</h1>
+      <p class="modal-desc">Llena tus datos, confirma tu cuenta EMPIEZA Y GANA.</p>
+
+	<form name="LoginForm" action="javascript:void(0)" onsubmit="BackEndLogin(this); return false">
+
+      <div class="input-block form-group">
+        <label for="username" class="input-label">Usuario</label>
+        <input type="text" class="form-control" name="username" required placeholder="Usuario">
+      </div>
+
+      <div class="input-block form-group">
+        <label for="password" class="input-label">Contraseña</label>
+        <input type="password" class="form-control" name="password" placeholder="Contraseña" required >
+      </div>
+
+	  <div class="text-center mt-2">
+        <small name="msj_error_lg" class="text-danger"></small>
+      </div>
+      <div class="modal-buttons form-group">
+        <a href="/recuperar-contra.html" class="">No recuerda tu contraseña?</a>
+        <button type="submit" name="btn-login" class="input-button">
+			<span name="msj_loading" id="id-login-loading"></span>
+			<span name="msj_login">Ingresar</span>
+		</button>
+	
+      </div> 
+    <input type="hidden" name="BackEndUrl" value="https://centraldeapuesta.com">
+
+	</form>
+      <p class="sign-up">Aún no tienes una cuenta? <a href="/register.html">Registrate Ahora !</a></p>
+    </div>
+    <div class="modal-right">
+      <img src="assets/img/ufc-ri-modal.png" alt="">
+    </div>
+    <button class="icon-button close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+    		<path d="M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.980469 15.990234 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 z"></path>
+		</svg>
+    </button>
+  </div>
+</div>
+
+<script src="https://images.betimages.com/Betslip/js/quick.login.min.js"></script>
+
+      <nav class="top-nav">
+        <div class="top-nav__container"><a class="top-nav__link" href="/"><img class="top-nav__logo" src="assets/img/logo.png" alt="logo"></a>
+          <ul class="top-nav__menu">
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="lista_apuestas.html">LINEAS DE APUESTA</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="casino.html">CASINO</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="caballos.html">CABALLOS</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="banca.html">BANCA</a></li>
+                        <li class="top-nav__li"><a class="top-nav__anchor" href="contact.html">CONTACTO</a></li>
+            <li class="top-nav__li"><a class="phone-info whatsapp" href="https://wa.me/56932130074"><i class="fa fa-whatsapp"><i><span class="text-phone"></span></i></i></a></li>
+          </ul>
+          <ul>
+            <div class="btn-ml">
+              <button class="btn-top-nav"><a href="register.html">REGISTRO</a></button>
+              <button class="modal-button btn-top-nav btn-dark">INGRESAR</button>
+            </div>
+          </ul>
+          <button class="top-nav__mb-iconMenu hamburger hamburger--slider-r" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+        </div>
+      </nav>
+      <div class="btn-m-nav btn-ml">
+        <button class="btn-top-nav"><a href="register.html">REGISTRO</a></button>
+        <button class="modal-button-m btn-top-nav btn-dark">INGRESAR</button>
+      </div>
+    </header>
+    <!--here ends the Main Header-->
+    <!--here start the Main Container-->
+    <main class="main-container">
+      <div class="main-con">
+        <div class="bg-reglas-deportes"><img src="/assets/img/Slider-Regla-de-caballos.jpg" alt=""></div>
+        <div class="main-cont ed-grid container-reglas">
+          <h1 class="titles">Reglas de Caballos</h1>
+          <div class="ed-grid"><h2>APUESTA DERECHA</h2>
+<ul>
+<li>
+<p>PRIMER LUGAR. Usted cobra a Primer Lugar si su selección finaliza en primer lugar.</p>
+</li>
+<li>
+<p>SEGUNDO LUGAR. Usted cobra a Segundo Lugar si su selección finaliza en primero o segundo lugar.</p>
+</li>
+<li>
+<p>TERCER LUGAR. Usted cobra a Tercer Lugar si su selección finaliza en primero, segundo o tercer lugar.</p>
+</li>
+<li>
+<p>No hay límite de pago en los primeros $1800.00 pesos de apuesta.</p>
+</li>
+<li>
+<p>Después de los primeros $1800.00 pesos, el pago se figurará de la siguiente manera:</p>
+</li>
+<li>
+<p>Primer Lugar 20 por 1; Segundo Lugar 8 por 1; Tercer Lugar 4 por 1.</p>
+</li>
+<li>
+<p>Para carreras de caballos dos añeros, los límites de pago son: Primer - Lugar 20 por 1; Segundo Lugar 8 por 1; Tercer Lugar 4 por 1.</p>
+</li>
+<li>
+<p>El pago máximo por Apuesta Derecha es de $108,000.00 pesos más la apuesta.</p>
+</li>
+<li>
+<p>Si un competidor es retirado, el dinero de la apuesta será reembolsado.</p>
+</li>
+<li>
+<p>Entries y Fields corren bajo un solo interés.</p>
+</li>
+<li>
+<p>Para los Hipódromos de: Aqueduct, Saratoga, Belmont, Santa Anita, Hollywood Park, Del Mar, Gulfstream, Churchill Downs y Keeneland, no hay límite de pago.</p>
+</li>
+<li>
+<p>Si un competidor es retirado, el dinero de la apuesta será reembolsado.</p>
+</li>
+</ul>
+<h2>TRACK QUINIELA</h2>
+<ul>
+<li>Usted cobra la apuesta de Track Quiniela si selecciona a los ganadores del primero y segundo lugar en cualquier orden de llegada.</li>
+<li>Si hay un Entry o Field de 3 o más corredores, la apuesta de Track Quiniela será cancelada. Entries y Fields corren bajo un solo interés.</li>
+<li>El límite de pago es de 150 por 1.</li>
+<li>El pago máximo por apuesta de Track Quiniela es de $108,000.00 pesos más la apuesta.</li>
+<li>Si un Field o Entry finalizan en primero y segundo lugar, la combinación ganadora serán el Field y el corredor que finalice en tercer lugar.</li>
+<li>Si un competidor es retirado, el dinero de la apuesta será reembolsado.</li>
+<li>Si en el Hipódromo, Galgódromo o Jai Alai de origen no se produce un pago para la combinación ganadora, el límite de pago será 150 por 1.</li>
+<li>No hay pagos por consolación.</li>
+<li>Para los hipódromos de: Aqueduct, Saratoga, Belmont, Santa Anita, Hollywood Park, Del Mar, Gulfstream, Churchill Downs y Keeneland; el pago máximo por apuesta en Track Quiniela es de $180,000.00 pesos más la apuesta.</li>
+</ul>
+<h2>EXACTA</h2>
+<ul>
+<li>Usted cobra la apuesta de Exacta si selecciona a los ganadores del primero y segundo lugar en el orden exacto de llegada.</li>
+<li>El límite de pago es de 300 por 1.</li>
+<li>El pago máximo por apuesta de Exacta es de $108,000 pesos más la apuesta.</li>
+<li>Si un Field o Entry finalizan en primero y segundo lugar, la combinación ganadora será el Field y el corredor que llegue a tercer lugar. Entries y Fields corren bajo un solo interés.</li>
+<li>Si un competidor es retirado, el dinero de la apuesta será reembolsado.</li>
+<li>Si en el Hipódromo, Galgódromo o Jai Alai de origen no se produce un pago para la combinación ganadora, el límite de pago será 300 por 1.</li>
+<li>No hay pagos de consolación.</li>
+<li>Para los hipódromos de Aqueduct, Saratoga, Belmont, Santa Anita, Hollywood Park, Del Mar, Gulfstream, Churchill Downs y Keeneland, el pago máximo por apuesta en Exacta es de $180,000 pesos más la apuesta</li>
+</ul>
+<h2>EXACTA</h2>
+<ul>
+<li>Usted cobra la apuesta de Exacta si selecciona a los ganadores del primero y segundo lugar en el orden exacto de llegada.</li>
+<li>El límite de pago es de 300 por 1.</li>
+<li>El pago máximo por apuesta de Exacta es de $108,000 pesos más la apuesta.</li>
+<li>Si un Field o Entry finalizan en primero y segundo lugar, la combinación ganadora será el Field y el corredor que llegue a tercer lugar. Entries y Fields corren bajo un solo interés.</li>
+<li>Si un competidor es retirado, el dinero de la apuesta será reembolsado.</li>
+<li>Si en el Hipódromo, Galgódromo o Jai Alai de origen no se produce un pago para la combinación ganadora, el límite de pago será 300 por 1.</li>
+<li>No hay pagos de consolación.</li>
+<li>Para los hipódromos de Aqueduct, Saratoga, Belmont, Santa Anita, Hollywood Park, Del Mar, Gulfstream, Churchill Downs y Keeneland, el pago máximo por apuesta en Exacta es de $180,000 pesos más la apuesta</li>
+</ul>
+<h2>DOBLE SELECCIÓN</h2>
+<ul>
+<li>Usted cobra la apuesta de Doble Selección si selecciona al ganador del primer lugar en dos carreras consecutivas, designadas con apuesta de Doble Selección.</li>
+<li>El límite de pago es de 300 por 1.</li>
+<li>El pago máximo por apuesta de Doble Selección es de $108,000 pesos más la apuesta.</li>
+<li>Si un corredor es retirado de cualquiera de las dos carreras designadas como doble selección, el dinero de la apuesta será reembolsado, y no habrá pagos de consolación.</li>
+<li>Si en el Hipódromo, Galgódromo o Jai Alai de origen no se produce un pago para la combinación ganadora, el límite de pago será 300 por 1.</li>
+<li>No hay pagos de consolación. Entries y Fields corren bajo un solo interés.</li>
+<li>Para los hipódromos de Aqueduct, Saratoga, Belmont, Santa Anita, Hollywood Park, Del Mar, Gulfstream, Churchill Downs y Keeneland, el pago máximo por apuesta en Doble Selección es de $180,000 pesos más la apuesta.</li>
+</ul>
+<h2>TRIFECTA</h2>
+<ul>
+<li>Usted cobra la apuesta de Trifecta si selecciona a los ganadores del primero, segundo y tercer lugar, en el orden exacto de llegada, en las carreras designadas con apuesta de Trifecta.</li>
+<li>El límite de pago es de 1,000 por 1.</li>
+<li>El pago máximo por apuesta de Trifecta es de $180,000 pesos más la apuesta.</li>
+<li>Si en el evento un corredor es retirado, el dinero de la apuesta será reembolsado. Entries y Fields corren bajo un solo interés.</li>
+<li>En caso de que el Hipódromo, Galgódromo o Jai Alai de origen pague con todos en cualquiera de los tres lugares, equivale a consolación en virtud de que nadie acertó a la combinación ganadora.</li>
+<li>No hay pagos de consolación.</li>
+<li>Si en el Hipódromo, Galgódromo o Jai Alai de origen no se produce un pago para la combinación ganadora, el límite de pago será 1,000 por 1.</li>
+<li>Para los hipódromos de Aqueduct, Saratoga, Belmont, Santa Anita, Hollywood Park, Del Mar, Gulfstream, Churchill Downs y Keeneland, el pago máximo por apuesta en Trifecta es de $360,000 pesos más la apuesta.</li>
+</ul>
+<h2>TRIPLE SELECCION</h2>
+<ul>
+<li>Usted cobra la apuesta de Triple Selección si selecciona al ganador del primer lugar en tres carreras consecutivas, designadas con apuesta de Triple Selección.</li>
+<li>El límite de pago es de 1,000 por 1.</li>
+<li>El pago máximo por apuesta de Triple Selección es de $180,000 pesos más la apuesta.</li>
+<li>No habrá reembolsos por los retirados.</li>
+<li>Si su selección es retirada del evento, ésta será sustituida por el ejemplar favorito al cierre de la carrera.</li>
+<li>En caso de que una o más carreras sean canceladas, el dinero de la apuesta será reembolsado.</li>
+<li>En caso de que el Hipódromo, Galgódromo o Jai Alai de origen pague con todos en cualquiera de las tres carreras, equivale a consolación en virtud de que nadie acertó a la combinación ganadora.</li>
+<li>No hay pagos de consolación.</li>
+<li>Si en el Hipódromo, Galgódromo o Jai Alai de origen no se produce un pago para la combinación ganadora, el límite de pago será 1,000 por 1.</li>
+<li>Entries y Fields corren bajo un solo interés.</li>
+<li>Para los hipódromos de Aqueduct, Saratoga, Belmont, Santa Anita, Hollywood Park, Del Mar, Gulfstream, Churchill Downs y Keeneland, el pago máximo por apuesta en Triple Selección es de $360,000 pesos más la apuesta.</li>
+</ul>
+<h2>SUPERFECTA</h2>
+<ul>
+<li>• Usted cobra la apuesta de Superfecta si selecciona a los ganadores del primero, segundo, tercero y cuarto lugar, en el orden exacto de llegada, en carreras designadas con apuesta de superfecta.</li>
+<li>El límite de pago es de 1,500 por 1.</li>
+<li>El pago máximo por apuesta de Superfecta es de $180,000 pesos más la apuesta.</li>
+<li>Si en el evento un corredor es retirado, el dinero de la apuesta será reembolsado.</li>
+<li>En caso de que el Hipódromo, Galgódromo o Jai Alai de origen pague con todos en cualquiera de los cuatro lugares, equivale a consolación en virtud de que nadie acertó a la combinación ganadora.</li>
+<li>No hay pagos de consolación.</li>
+<li>Si en el Hipódromo, Galgódromo o Jai Alai de origen no se produce un pago para la combinación ganadora, el límite de pago será 1,500 por 1.</li>
+<li>Entries y Fields corren bajo un solo interés.</li>
+<li>Para los hipódromos de Aqueduct, Saratoga, Belmont, Santa Anita, Hollywood Park, Del Mar, Gulfstream, Churchill Downs y Keeneland, el pago máximo por apuesta en Superfecta es de $360,000 pesos más la apuesta.</li>
+</ul>
+<h2>PICK FOUR</h2>
+<ul>
+<li>Usted cobra la apuesta de Pick Four si selecciona al ganador del primer lugar en cuatro carreras consecutivas designadas con apuesta de Pick Four.</li>
+<li>El límite de pago es de 1,500 por 1.</li>
+<li>El pago máximo por apuesta de Pick Four es de $180,000 pesos más la apuesta.</li>
+<li>No habrá reembolsos por los retirados.</li>
+<li>Si su selección es retirada del evento, ésta será sustituida por el ejemplar favorito al cierre de la carrera.</li>
+<li>En caso de que una o más carreras sean canceladas, el dinero de la apuesta será reembolsado.</li>
+<li>En caso de que el Hipódromo, Galgódromo o Jai Alai de origen pague con todos en cualquiera de las cuatro carreras, equivale a consolación en virtud de que nadie acertó a la combinación ganadora.</li>
+<li>No hay pagos de consolación.</li>
+<li>Si en el Hipódromo, Galgódromo o Jai Alai de origen no se produce un pago para la combinación ganadora, el límite de pago será 1,500 por 1. Entries y Fields corren bajo un solo interés.</li>
+<li>Para los hipódromos de Aqueduct, Saratoga, Belmont, Santa Anita, Hollywood Park, Del Mar, Gulfstream, Churchill Downs y Keeneland, el pago máximo por apuesta en Pick Four es de $360,000 pesos más la apuesta.</li>
+</ul>
+<h2>APUESTAS FUTURAS</h2>
+<ul>
+<li>Esta es una apuesta a eventos designados a futuro, tales como: Derby de Kentucky, Copa de Criadores, Triple Corona, etc.</li>
+<li>Estas apuestas son consideradas como Apuestas Derechas y pagan de acuerdo al momio con el que se realizó la apuesta.</li>
+<li>En caso de que un corredor sea retirado, no habrá devoluciones.</li>
+<li>Entries y Fields corren bajo un mismo interés.</li>
+</ul>
+<h2>PICK FIVE</h2>
+<ul>
+<li>Usted cobra la apuesta de Pick Five si selecciona al ganador del primer lugar en cinco carreras consecutivas, designadas con apuesta de Pick Five.</li>
+<li>Para ganar la apuesta, usted deberá tener igual o mayor número de carreras como el o los boletos ganadores en el hipódromo o galgódromo designado.</li>
+<li>No habrá pagos de consolación.</li>
+<li>En caso de que no haya boletos ganadores con cinco aciertos en el Hipódromo o Galgódromo designado y haya uno o más boletos con mayor número de aciertos repartirán el monto apostado de acuerdo a las reglas de origen.</li>
+<li>No hay límite de pago.</li>
+<li>En caso de que haya un empate a ganar entre dos o más corredores en carreras designadas de Pick Five, todos los involucrados en el empate serán considerados ganadores.</li>
+<li>No habrá devoluciones por competidores retirados.</li>
+<li>Si su selección es retirada del evento, ésta será sustituida por el ejemplar favorito al cierre de la carrera. Entries y Fields corren bajo un solo interés.</li>
+</ul>
+<h2>PICK SIX</h2>
+<ul>
+<li>Usted cobra la apuesta de Pick Six si selecciona al ganador del primer lugar en seis carreras consecutivas, designadas con apuesta de Pick Six.</li>
+<li>Para ganar la apuesta, usted deberá tener igual o mayor número de carreras como el o los boletos ganadores en el Hipódromo o Galgódromo designado.</li>
+<li>Los pagos de consolación son con una carrera menos que los boletos ganadores.</li>
+<li>No hay límite de pago.</li>
+<li>En caso de que haya un empate a ganar entre dos o más corredores en carreras designadas de Pick Six, todos los involucrados en el empate serán considerados ganadores.</li>
+<li>No habrá devoluciones por competidores retirados.</li>
+</ul>
+<p>Si su selección es retirada del evento, ésta será sustituida por el ejemplar favorito al cierre de la carrera. Entries y Fields corren bajo un solo interés.</p>
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--here ends the Main Container-->
+    <!--here start the Main Footer-->
+    <footer class="main-footer">
+      <div class="footer-alig ed-grid m-grid-4 lg-grid-4 row-gap">
+                <ul class="ul-footer">
+                          <li><a href="lista_apuestas.html">Apuestas en Línea</a></li>
+                          <li><a href="caballos.html">Apuestas Caballos</a></li>
+                          <li><a href="casino.html">Casino en Línea</a></li>
+                          <li><a href="banca.html">Opciones del Deposito</a></li>
+                </ul>
+                <ul class="ul-footer">
+                          <li><a href="reglas-deportes.html">Reglas Deportes</a></li>
+                          <li><a href="lista_apuestas.html">Líneas de Apuesta</a></li>
+                          <li><a href="register.html">REGISTRARME!</a></li>
+                </ul>
+                <ul class="ul-footer">
+                          <li><a href="reglas-caballos.html">Reglas de Caballos</a></li>
+                          <li><a href="juego-responsable.html">Juego Responsable</a></li>
+                          <li><a href="privacidad.html">Política de Privacidad</a></li>
+                          <li><a href="reglas-apuestas-envivo.html">Reglas Apuestas en vivo</a></li>
+                </ul>
+        <ul class="footer-imgs">
+          <div><img src="assets/img/logo-mobile.png" alt=""><img src="assets/img/usa18.png" alt=""></div>
+        </ul>
+      </div>
+      <section class="background-footer"><img src="/assets/img/footer-bg.jpg" alt=""></section>
+    </footer>
+    <!--here ends the Main Footer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <script src="assets/js/scripts-min.js"></script>
+  </body>
+</html>

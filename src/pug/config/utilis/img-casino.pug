@@ -2,8 +2,8 @@ mixin pushImg(alt, img)
 	div(class="card-itemCasino")
 				div(class="buttons-itemCasino")
 					h3=alt
-					button Jugar Real
-					button Jugar Gratis
+					button(class="modal-button-casino") Jugar Real
+					a(href="/register.html"): button(class="DisNoneCasinoBtn ") Jugar Gratis
 				img(class="img-casino" src=img, alt=alt)
 
 -for(var i =0; i< img_casino.length; i++)
