@@ -11,7 +11,7 @@
         z-index             : 100;
         background-color    : transparent;
         border              : 0;
-        color               : #FFF;
+        color               : rgb(126, 126, 126);
         font-size           : 24px;
         opacity             : 0.8;
         transition          : opacity .3s ease;
@@ -75,7 +75,7 @@
         [aria-selected="true"] {
           background-color  :transparent;
           &:before{
-            border-color    : #fff;
+            border-color    : rgb(85, 85, 85);
           }
         }
       }

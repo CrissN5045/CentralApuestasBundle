@@ -11,6 +11,12 @@
 		padding: 0;
 		display: flex;
 
+		@include from(s){
+			flex-direction: column;
+		}
+		@include from(m){
+			flex-direction: row;
+		}
 	
 	}
 	.tabs-container__tab:hover{

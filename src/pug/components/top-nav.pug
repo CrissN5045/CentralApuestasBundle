@@ -1,11 +1,11 @@
 nav(class='top-nav')
 	div(class='top-nav__container')
 		a(href='/', class='top-nav__link')
-			img(src='assets/img/logo.png', alt='logo', class='top-nav__logo')
+			img(src='assets/img/logo.png', alt='logo', class='top-nav__logo', width="100%", height="100%")
 		ul(class='top-nav__menu')
 			include ../config/utilis/top-menu
-			li(class="top-nav__li"): a(class="phone-info whatsapp" href="https://wa.me/56932130074"): i(class="fa fa-whatsapp"): i: span(class="text-phone")
-		ul()
+			li(class="top-nav__li"): a(href="https://wa.me/56932130074" aria-label="Read more whatsapp" class="phone-info whatsapp"): i(class="fa fa-whatsapp"): i: span(class="text-phone")
+		div()
 			div(class="btn-ml")
 				button(class="btn-top-nav"): a(href="register.html") REGISTRO
 				button(class="modal-button btn-top-nav btn-dark") INGRESAR

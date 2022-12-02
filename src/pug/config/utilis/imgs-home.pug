@@ -10,7 +10,7 @@ mixin pushImgsHome()
 
 mixin pushImg(img, text_class, text_title,img_url)
 	div(class=text_class, class="container-main-img"): a(href=img_url)
-		img(class="images-main" src=img, alt=text_title)
+		img(class="images-main" src=img, alt=text_title, width="100%", height="100%")
 		div(class="container-btn")
 			button(class="btn") APUESTA AHORA
 	
