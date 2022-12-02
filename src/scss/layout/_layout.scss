@@ -65,15 +65,20 @@ body {
 				height: auto;
 			}
 		}
-		
 	}
 }
 .footer-alig{
 	margin: auto;
 	text-align: center;
+	.ul-footer{
+		padding: 0;
+	}
 	@include from(m){
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	li{
+		margin: 12px;
 	}
 }

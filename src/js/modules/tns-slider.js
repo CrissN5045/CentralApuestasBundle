@@ -1,7 +1,10 @@
+
+
+
+
 export const tnsSingle = () => {
 	let tnsSingleVar = document.getElementById('tnsSingle');
 	if (tnsSingleVar != null) {
-
 
 		let slider = tns({
 			container: '#tnsSingle',

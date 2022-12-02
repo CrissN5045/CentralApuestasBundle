@@ -3,9 +3,7 @@ export const tabs = () => {
 		let tables = document.querySelectorAll('.lorem')
 		for (let index = 0; index < tables.length; index++) {
 			tables[index].style.display = 'none'
-			
 		}
-		
 	}
     const 
         d = document,
@@ -18,11 +16,8 @@ export const tabs = () => {
 				hideTable();
 				let table = document.querySelector(`.${x.id}`);
 				table.style.display = 'block';
-
 			})
 		}
-
-	
 };
 
 

@@ -1,15 +1,11 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 'use strict';
 
-var _selectPais = require('./modules/select-pais');
-
 var _modalLogin = require('./modules/modal-login');
 
 var _topNav = require('./modules/topNav');
 
 var _tnsSlider = require('./modules/tns-slider');
-
-var _searchFilter = require('./modules/searchFilter');
 
 var _swDetecter = require('./modules/swDetecter');
 
@@ -17,26 +13,20 @@ var _tabs = require('./modules/tabs');
 
 var _dropdown = require('./modules/dropdown');
 
-//import {mdInner} from './modules/mdInner';
-
-
 (function () {
 	(0, _swDetecter.swDetecter)();
 	(0, _topNav.topNav)();
-	(0, _tnsSlider.tnsSingle)();
 	if (document.body.classList.contains('home')) {
-		// functions here
-	} else if (document.body.classList.contains('portfolio')) {
-		// functions here
-		(0, _searchFilter.searchFilter)();
-	} else if (document.body.classList.contains('caballos')) {
+		(0, _tnsSlider.tnsSingle)();
+	}
+	if (document.body.classList.contains('caballos')) {
 		(0, _tabs.tabs)();
 	} else if (document.body.classList.contains('reglas-deportes')) {
 		(0, _dropdown.initAcc)();
 	}
 })();
 
-},{"./modules/dropdown":2,"./modules/modal-login":3,"./modules/searchFilter":4,"./modules/select-pais":5,"./modules/swDetecter":6,"./modules/tabs":7,"./modules/tns-slider":8,"./modules/topNav":9}],2:[function(require,module,exports){
+},{"./modules/dropdown":2,"./modules/modal-login":3,"./modules/swDetecter":4,"./modules/tabs":5,"./modules/tns-slider":6,"./modules/topNav":7}],2:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -106,59 +96,6 @@ document.onkeydown = function (evt) {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-var searchFilter = exports.searchFilter = function searchFilter() {
-	// get the input data
-	var fnFilter = function fnFilter(inputElement, selector, selectorContainer) {
-		inputElement.addEventListener('keyup', function (e) {
-			if (e.key === 'Escape') e.target.value = '';
-			fnCompareElements(e.target.value.toUpperCase(), selector, selectorContainer);
-		});
-	};
-	var fnCompareElements = function fnCompareElements(filterText, selector, selectorContainer) {
-		var searchElements = document.querySelectorAll(selector);
-		var searchContainers = document.querySelectorAll(selectorContainer);
-		searchElements.forEach(function (el) {
-			el.textContent.toUpperCase().includes(filterText) ? el.style.display = 'block' : el.style.display = 'none';
-		});
-		searchContainers.forEach(function (el) {
-			el.textContent.toUpperCase().includes(filterText) ? el.style.display = 'block' : el.style.display = 'none';
-		});
-	};
-	fnFilter(document.getElementById('searchInput'), '.class-item__fragment', '.class-item');
-};
-
-},{}],5:[function(require,module,exports){
-'use strict';
-
-var pais = document.getElementById('pais');
-var telf = document.getElementById('telf');
-
-if (pais != null || telf != null) {
-  pais.onchange = function (e) {
-    telf.value = this.value;
-    if (this.value.trim() != '') {
-      telf.disabled = false;
-    } else {
-      telf.disabled = true;
-    }
-  };
-
-  telf.onkeyup = function (e) {
-    var nums_v = this.value.match(/\d+/g);
-    if (nums_v != null) {
-      this.value = '+' + nums_v.toString().replace(/\,/, '');
-    } else {
-      this.value = pais.value;
-    }
-  };
-}
-
-},{}],6:[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
 var swDetecter = exports.swDetecter = function swDetecter() {
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker.register('./sw.js').then(function (reg) {
@@ -169,7 +106,7 @@ var swDetecter = exports.swDetecter = function swDetecter() {
 	}
 };
 
-},{}],7:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -201,7 +138,7 @@ var tabs = exports.tabs = function tabs() {
 	}
 };
 
-},{}],8:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -223,7 +160,7 @@ var tnsSingle = exports.tnsSingle = function tnsSingle() {
 	};
 };
 
-},{}],9:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

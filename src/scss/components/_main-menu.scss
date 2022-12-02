@@ -1,29 +1,7 @@
-/*
-  MAIN MENU
-  Este es el menú principal del sitio, aparece dentro de main header
-
-  Su estructura es
-    <nav class="main-menu" id="main-menu">
-      <ul>
-        <li><a href="#">Item de menu</a></li>
-        <li><a href="#">Item de menu</a></li>
-      </ul>
-    </nav>
-
-  En movil se activa con un botón de hamburguesa.
-  En el ejemplo es un div pero puede ser cualquier elemento
-  (debe estar fuera del nav)
-    <div id="main-menu-toggle" class="main-menu-toggle to-l"></div>
-
-  Entra por la derecha justo debajo de main-header
-
-*/
-
 .main-menu {
   a:hover {
     text-decoration : none;
   }
-
   .active {
 
     @include from(l) {
@@ -36,7 +14,6 @@
     }
   }
 }
-
 
 body {
   position   : relative;
