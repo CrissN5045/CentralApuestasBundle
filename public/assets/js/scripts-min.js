@@ -14,7 +14,7 @@ var _tabs = require('./modules/tabs');
 var _dropdown = require('./modules/dropdown');
 
 (function () {
-	(0, _swDetecter.swDetecter)();
+
 	(0, _topNav.topNav)();
 	if (document.body.classList.contains('home')) {
 		(0, _tnsSlider.tnsSingle)();
@@ -147,13 +147,12 @@ Object.defineProperty(exports, "__esModule", {
 var tnsSingle = exports.tnsSingle = function tnsSingle() {
 	var tnsSingleVar = document.getElementById('tnsSingle');
 	if (tnsSingleVar != null) {
-
 		var slider = tns({
 			container: '#tnsSingle',
 			items: 1,
 			slideBy: 1,
 			autoplay: true,
-			speed: 1500,
+			speed: 1000,
 			autoplayButtonOutput: false,
 			controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
 		});
