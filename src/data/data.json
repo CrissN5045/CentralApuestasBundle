@@ -1,12 +1,12 @@
 {
 		"img_slider":[
 			{
-				"img": "//media.betimages.com/media/jpg/centraldeapuesta/ufc.jpg",
+				"img": "https://media.betimages.com//media/jpg/centraldeapuesta/ufc.jpg",
 				"alt": "UFC",
 				"url": "lista_apuestas.html"
 			},
 			{
-				"img" : "//media.betimages.com/media/jpg/centraldeapuesta/mlb.jpg",
+				"img" : "https://media.betimages.com//media/jpg/centraldeapuesta/mlb.jpg",
 				"alt" : "mlb",
 				"url": "lista_apuestas.html"
 			}
