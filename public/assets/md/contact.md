@@ -9,4 +9,5 @@ Llámenos a cualquiera de nuestros números gratuitos.
 
 Con el fin de ponerse en contacto con nosotros vía E-mail, haga clic en el enlace de abajo:
 
-soporte@centraldeapuesta.com
+<a href="mailto:soporte@Winsport724.com">soporte@centraldeapuesta.com</a>
+

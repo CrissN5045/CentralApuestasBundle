@@ -11,16 +11,13 @@
 .lorem:first-of-type{
 	display: block;
 }
-.tabs-container{
+.tabs-container__panels{
 	@include from(m){
 		overflow-y: auto;
 	}
 	@include from(s){
 		overflow-y: scroll;
 	}
-}
-.tabs-container__panels{
-	
 	margin-top: 2rem;
 	width: auto;
 	h3{

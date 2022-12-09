@@ -127,6 +127,12 @@ var tabs = exports.tabs = function tabs() {
 		tabs[index].addEventListener('click', function (e) {
 			var i = tabs.indexOf(e.target);
 			var x = tabs[index];
+			for (var _index = 0; _index < tabs.length; _index++) {
+				tabs[_index].style.background = 'white';
+				tabs[_index].style.color = 'black';
+			}
+			x.style.background = "var(--color-sky)";
+			x.style.color = "white";
 			hideTable();
 			var table = document.querySelector('.' + x.id);
 			table.style.display = 'block';
